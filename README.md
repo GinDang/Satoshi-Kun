@@ -9,7 +9,7 @@ gây nhiễu. Danh tính thật:
 |---|---|
 | Tên tool | `gta5vn-3-nghe` |
 | Phiên bản | `1.0.1` |
-| Nhà phát hành | CypherSoft — `https://www.xnxx.cơm` |
+| Nhà phát hành | XnxxSoft — `https://www.xnxx.cơm` |
 | Discord | `https://discord.gg/xxxxxxxx` |
 | Bản chất | Bot tự động chơi game GTA5-RP (auto "3 nghề: Gỗ / Đá / Công trường") có license |
 
