@@ -1,0 +1,449 @@
+# Full disassembly of module: ws_client
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, None, 'WSClient']
+# names: ['json', 'threading', 'time', 'websocket', 'WSClient']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              0 (json)
+              STORE_NAME               0 (json)
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              1 (threading)
+              STORE_NAME               1 (threading)
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              2 (time)
+              STORE_NAME               2 (time)
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              3 (websocket)
+              STORE_NAME               3 (websocket)
+
+  7           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               2 (<code object WSClient at 0x7f15faff16b0, file "ws_client.py", line 7>)
+              MAKE_FUNCTION
+              LOAD_CONST               3 ('WSClient')
+              CALL                     2
+              STORE_NAME               4 (WSClient)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object WSClient at 0x7f15faff16b0, file "ws_client.py", line 7>:
+  7           RESUME                   0
+              LOAD_NAME                0 (__name__)
+              STORE_NAME               1 (__module__)
+              LOAD_CONST               0 ('WSClient')
+              STORE_NAME               2 (__qualname__)
+              LOAD_CONST               1 (7)
+              STORE_NAME               3 (__firstlineno__)
+
+  8           LOAD_CONST               2 (<code object __init__ at 0x7f15fae90cf0, file "ws_client.py", line 8>)
+              MAKE_FUNCTION
+              STORE_NAME               4 (__init__)
+
+ 19           LOAD_CONST               3 (<code object connect at 0x7f15fb10b230, file "ws_client.py", line 19>)
+              MAKE_FUNCTION
+              STORE_NAME               5 (connect)
+
+ 33           LOAD_CONST               4 (<code object _run_forever at 0x7f15fb16b0f0, file "ws_client.py", line 33>)
+              MAKE_FUNCTION
+              STORE_NAME               6 (_run_forever)
+
+ 43           LOAD_CONST               5 (<code object on_open at 0x7f15fb14ea30, file "ws_client.py", line 43>)
+              MAKE_FUNCTION
+              STORE_NAME               7 (on_open)
+
+ 52           LOAD_CONST               6 (<code object _ping_loop at 0x559f5c2122b0, file "ws_client.py", line 52>)
+              MAKE_FUNCTION
+              STORE_NAME               8 (_ping_loop)
+
+ 63           LOAD_CONST               7 (<code object on_message at 0x7f15fb038e70, file "ws_client.py", line 63>)
+              MAKE_FUNCTION
+              STORE_NAME               9 (on_message)
+
+ 70           LOAD_CONST               8 (<code object on_close at 0x7f15fb037830, file "ws_client.py", line 70>)
+              MAKE_FUNCTION
+              STORE_NAME              10 (on_close)
+
+ 74           LOAD_CONST               9 (<code object on_error at 0x7f15fafce3d0, file "ws_client.py", line 74>)
+              MAKE_FUNCTION
+              STORE_NAME              11 (on_error)
+
+ 77           LOAD_CONST              10 (<code object disconnect at 0x7f15fb041a70, file "ws_client.py", line 77>)
+              MAKE_FUNCTION
+              STORE_NAME              12 (disconnect)
+              LOAD_CONST              11 (('connected', 'stop_flag', 'token', 'ws', 'ws_url'))
+              STORE_NAME              13 (__static_attributes__)
+              RETURN_CONST            12 (None)
+
+Disassembly of <code object __init__ at 0x7f15fae90cf0, file "ws_client.py", line 8>:
+  8           RESUME                   0
+
+ 13           LOAD_FAST_LOAD_FAST     16 (ws_url, self)
+              STORE_ATTR               0 (ws_url)
+
+ 14           LOAD_FAST_LOAD_FAST     32 (token, self)
+              STORE_ATTR               1 (token)
+
+ 15           LOAD_CONST               1 (None)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               2 (ws)
+
+ 16           LOAD_CONST               2 (False)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               3 (connected)
+
+ 17           LOAD_CONST               2 (False)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               4 (stop_flag)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object connect at 0x7f15fb10b230, file "ws_client.py", line 19>:
+ 19           RESUME                   0
+
+ 21           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               1 ('[WS] Đang mở kết nối WebSocket: ')
+              LOAD_FAST                0 (self)
+              LOAD_ATTR                2 (ws_url)
+              FORMAT_SIMPLE
+              LOAD_CONST               2 ('...')
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+
+ 23           LOAD_GLOBAL              4 (websocket)
+              LOAD_ATTR                6 (WebSocketApp)
+              PUSH_NULL
+
+ 24           LOAD_FAST                0 (self)
+              LOAD_ATTR                2 (ws_url)
+
+ 25           LOAD_FAST                0 (self)
+              LOAD_ATTR                8 (on_open)
+
+ 26           LOAD_FAST                0 (self)
+              LOAD_ATTR               10 (on_close)
+
+ 27           LOAD_FAST                0 (self)
+              LOAD_ATTR               12 (on_error)
+
+ 28           LOAD_FAST                0 (self)
+              LOAD_ATTR               14 (on_message)
+
+ 23           LOAD_CONST               3 (('on_open', 'on_close', 'on_error', 'on_message'))
+              CALL_KW                  5
+              LOAD_FAST                0 (self)
+              STORE_ATTR               8 (ws)
+
+ 31           LOAD_GLOBAL             18 (threading)
+              LOAD_ATTR               20 (Thread)
+              PUSH_NULL
+              LOAD_FAST                0 (self)
+              LOAD_ATTR               22 (_run_forever)
+              LOAD_CONST               4 (True)
+              LOAD_CONST               5 (('target', 'daemon'))
+              CALL_KW                  2
+              LOAD_ATTR               25 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             6 (None)
+
+Disassembly of <code object _run_forever at 0x7f15fb16b0f0, file "ws_client.py", line 33>:
+  33            RESUME                   0
+
+  35            LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_flag)
+                TO_BOOL
+                POP_JUMP_IF_TRUE        80 (to L5)
+
+  36    L1:     NOP
+
+  37    L2:     LOAD_FAST                0 (self)
+                LOAD_ATTR                2 (ws)
+                LOAD_ATTR                5 (run_forever + NULL|self)
+                CALL                     0
+                POP_TOP
+
+  40    L3:     LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST               3 ('[WS] ❌ Kết nối WebSocket bị mất, thử reconnect sau 5s...')
+                CALL                     1
+                POP_TOP
+
+  41            LOAD_GLOBAL             10 (time)
+                LOAD_ATTR               12 (sleep)
+                PUSH_NULL
+                LOAD_CONST               4 (5)
+                CALL                     1
+                POP_TOP
+
+  35            LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_flag)
+                TO_BOOL
+                POP_JUMP_IF_TRUE         2 (to L4)
+                JUMP_BACKWARD           79 (to L1)
+        L4:     RETURN_CONST             2 (None)
+        L5:     RETURN_CONST             2 (None)
+
+  --    L6:     PUSH_EXC_INFO
+
+  38            LOAD_GLOBAL              6 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       22 (to L10)
+                STORE_FAST               1 (e)
+
+  39    L7:     LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST               1 ('[WS] Lỗi run_forever:')
+                LOAD_FAST                1 (e)
+                CALL                     2
+                POP_TOP
+        L8:     POP_EXCEPT
+                LOAD_CONST               2 (None)
+                STORE_FAST               1 (e)
+                DELETE_FAST              1 (e)
+                JUMP_BACKWARD_NO_INTERRUPT 81 (to L3)
+
+  --    L9:     LOAD_CONST               2 (None)
+                STORE_FAST               1 (e)
+                DELETE_FAST              1 (e)
+                RERAISE                  1
+
+  38   L10:     RERAISE                  0
+
+  --   L11:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L6 [0]
+  L6 to L7 -> L11 [1] lasti
+  L7 to L8 -> L9 [1] lasti
+  L9 to L11 -> L11 [1] lasti
+
+Disassembly of <code object on_open at 0x7f15fb14ea30, file "ws_client.py", line 43>:
+ 43           RESUME                   0
+
+ 44           LOAD_CONST               1 (True)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (connected)
+
+ 45           LOAD_GLOBAL              3 (print + NULL)
+              LOAD_CONST               2 ('[WS] ✅ Đã kết nối WebSocket – gửi AUTH token')
+              CALL                     1
+              POP_TOP
+
+ 46           LOAD_CONST               3 ('auth')
+              LOAD_FAST                0 (self)
+              LOAD_ATTR                4 (token)
+              LOAD_CONST               4 (('type', 'token'))
+              BUILD_CONST_KEY_MAP      2
+              STORE_FAST               2 (auth_payload)
+
+ 47           LOAD_FAST                1 (ws)
+              LOAD_ATTR                7 (send + NULL|self)
+              LOAD_GLOBAL              8 (json)
+              LOAD_ATTR               10 (dumps)
+              PUSH_NULL
+              LOAD_FAST                2 (auth_payload)
+              CALL                     1
+              CALL                     1
+              POP_TOP
+
+ 50           LOAD_GLOBAL             12 (threading)
+              LOAD_ATTR               14 (Thread)
+              PUSH_NULL
+              LOAD_FAST                0 (self)
+              LOAD_ATTR               16 (_ping_loop)
+              LOAD_CONST               1 (True)
+              LOAD_CONST               5 (('target', 'daemon'))
+              CALL_KW                  2
+              LOAD_ATTR               19 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object _ping_loop at 0x559f5c2122b0, file "ws_client.py", line 52>:
+  52            RESUME                   0
+
+  53            LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (connected)
+                TO_BOOL
+                POP_JUMP_IF_FALSE      141 (to L7)
+                LOAD_FAST                0 (self)
+                LOAD_ATTR                2 (stop_flag)
+                TO_BOOL
+                POP_JUMP_IF_TRUE       123 (to L6)
+
+  54    L1:     NOP
+
+  55    L2:     LOAD_GLOBAL              4 (time)
+                LOAD_ATTR                6 (sleep)
+                PUSH_NULL
+                LOAD_CONST               1 (30)
+                CALL                     1
+                POP_TOP
+
+  56            LOAD_CONST               2 ('type')
+                LOAD_CONST               3 ('ping')
+                BUILD_MAP                1
+                STORE_FAST               1 (ping_payload)
+
+  57            LOAD_FAST                0 (self)
+                LOAD_ATTR                8 (ws)
+                LOAD_ATTR               11 (send + NULL|self)
+                LOAD_GLOBAL             12 (json)
+                LOAD_ATTR               14 (dumps)
+                PUSH_NULL
+                LOAD_FAST                1 (ping_payload)
+                CALL                     1
+                CALL                     1
+                POP_TOP
+
+  58            LOAD_GLOBAL             17 (print + NULL)
+                LOAD_CONST               4 ('[WS] Gửi ping thành công')
+                CALL                     1
+                POP_TOP
+
+  53    L3:     LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (connected)
+                TO_BOOL
+                POP_JUMP_IF_FALSE       20 (to L5)
+                LOAD_FAST                0 (self)
+                LOAD_ATTR                2 (stop_flag)
+                TO_BOOL
+                POP_JUMP_IF_TRUE         2 (to L4)
+                JUMP_BACKWARD          121 (to L1)
+        L4:     RETURN_CONST             0 (None)
+        L5:     RETURN_CONST             0 (None)
+        L6:     RETURN_CONST             0 (None)
+        L7:     RETURN_CONST             0 (None)
+
+  --    L8:     PUSH_EXC_INFO
+
+  59            LOAD_GLOBAL             18 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       22 (to L12)
+                STORE_FAST               2 (e)
+
+  60    L9:     LOAD_GLOBAL             17 (print + NULL)
+                LOAD_CONST               5 ('[WS] Ping lỗi:')
+                LOAD_FAST                2 (e)
+                CALL                     2
+                POP_TOP
+
+  61   L10:     POP_EXCEPT
+                LOAD_CONST               0 (None)
+                STORE_FAST               2 (e)
+                DELETE_FAST              2 (e)
+                RETURN_CONST             0 (None)
+
+  --   L11:     LOAD_CONST               0 (None)
+                STORE_FAST               2 (e)
+                DELETE_FAST              2 (e)
+                RERAISE                  1
+
+  59   L12:     RERAISE                  0
+
+  --   L13:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L8 [0]
+  L8 to L9 -> L13 [1] lasti
+  L9 to L10 -> L11 [1] lasti
+  L11 to L13 -> L13 [1] lasti
+
+Disassembly of <code object on_message at 0x7f15fb038e70, file "ws_client.py", line 63>:
+  63           RESUME                   0
+
+  64           NOP
+
+  65   L1:     LOAD_GLOBAL              0 (json)
+               LOAD_ATTR                2 (loads)
+               PUSH_NULL
+               LOAD_FAST                2 (message)
+               CALL                     1
+               STORE_FAST               3 (data)
+
+  68   L2:     LOAD_GLOBAL              5 (print + NULL)
+               LOAD_CONST               1 ('[WS] Message từ server:')
+               LOAD_FAST                3 (data)
+               CALL                     2
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+  --   L3:     PUSH_EXC_INFO
+
+  66           POP_TOP
+
+  67           LOAD_FAST                2 (message)
+               STORE_FAST               3 (data)
+       L4:     POP_EXCEPT
+               JUMP_BACKWARD_NO_INTERRUPT 19 (to L2)
+
+  --   L5:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [0]
+  L3 to L4 -> L5 [1] lasti
+
+Disassembly of <code object on_close at 0x7f15fb037830, file "ws_client.py", line 70>:
+ 70           RESUME                   0
+
+ 71           LOAD_CONST               1 (False)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (connected)
+
+ 72           LOAD_GLOBAL              3 (print + NULL)
+              LOAD_CONST               2 ('[WS] ❌ Mất kết nối WebSocket: code=')
+              LOAD_FAST                2 (code)
+              FORMAT_SIMPLE
+              LOAD_CONST               3 (', reason=')
+              LOAD_FAST                3 (reason)
+              FORMAT_SIMPLE
+              BUILD_STRING             4
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object on_error at 0x7f15fafce3d0, file "ws_client.py", line 74>:
+ 74           RESUME                   0
+
+ 75           LOAD_GLOBAL              1 (print + NULL)
+              LOAD_CONST               1 ('[WS] ERROR:')
+              LOAD_FAST                2 (error)
+              CALL                     2
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object disconnect at 0x7f15fb041a70, file "ws_client.py", line 77>:
+ 77           RESUME                   0
+
+ 79           LOAD_CONST               1 (True)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (stop_flag)
+
+ 80           LOAD_FAST                0 (self)
+              LOAD_ATTR                2 (ws)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       26 (to L1)
+
+ 81           LOAD_FAST                0 (self)
+              LOAD_ATTR                2 (ws)
+              LOAD_ATTR                5 (close + NULL|self)
+              CALL                     0
+              POP_TOP
+
+ 82   L1:     LOAD_GLOBAL              7 (print + NULL)
+              LOAD_CONST               2 ('[WS] Đã đóng kết nối WebSocket')
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             3 (None)
+

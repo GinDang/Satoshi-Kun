@@ -1,0 +1,527 @@
+# Full disassembly of module: main
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, None, ('QApplication', 'QLabel'), ('Qt', 'QTimer', 'QPropertyAnimation'), ('QIcon',), ('MainApp',), ('LoginPage',), 'frozen', False, '__main__', 'resources\\icon.ico', 'Ứng dụng đang được khởi động...', '\n        background-color: #1e293b;\n        color: white;\n        font-size: 18px;\n        padding: 30px;\n        border-radius: 12px;\n        border: 1px solid #334155;\n    ', 360, 120, 200, (10,)]
+# names: ['sys', 'os', 'shutil', 'random', 'string', 'subprocess', 'PySide6.QtWidgets', 'QApplication', 'QLabel', 'PySide6.QtCore', 'Qt', 'QTimer', 'QPropertyAnimation', 'PySide6.QtGui', 'QIcon', 'main_app', 'MainApp', 'login', 'LoginPage', 'utils', 'random_name', 'get_appdata_folder', 'cleanup_old_exes', 'clone_and_run_in_appdata', 'getattr', 'path', 'abspath', 'argv', 'current_path', 'appdata_folder', 'lower', 'startswith', 'fade_out', '__name__', 'app', 'setWindowIcon', 'resource_path', 'splash', 'setWindowFlag', 'FramelessWindowHint', 'WindowStaysOnTopHint', 'setAlignment', 'AlignCenter', 'setStyleSheet', 'resize', 'show', 'start_main', 'singleShot', 'exit', 'exec']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              0 (sys)
+              STORE_NAME               0 (sys)
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              1 (os)
+              STORE_NAME               1 (os)
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              2 (shutil)
+              STORE_NAME               2 (shutil)
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              3 (random)
+              STORE_NAME               3 (random)
+
+  5           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              4 (string)
+              STORE_NAME               4 (string)
+
+  6           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              5 (subprocess)
+              STORE_NAME               5 (subprocess)
+
+  7           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('QApplication', 'QLabel'))
+              IMPORT_NAME              6 (PySide6.QtWidgets)
+              IMPORT_FROM              7 (QApplication)
+              STORE_NAME               7 (QApplication)
+              IMPORT_FROM              8 (QLabel)
+              STORE_NAME               8 (QLabel)
+              POP_TOP
+
+  8           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('Qt', 'QTimer', 'QPropertyAnimation'))
+              IMPORT_NAME              9 (PySide6.QtCore)
+              IMPORT_FROM             10 (Qt)
+              STORE_NAME              10 (Qt)
+              IMPORT_FROM             11 (QTimer)
+              STORE_NAME              11 (QTimer)
+              IMPORT_FROM             12 (QPropertyAnimation)
+              STORE_NAME              12 (QPropertyAnimation)
+              POP_TOP
+
+  9           LOAD_CONST               0 (0)
+              LOAD_CONST               4 (('QIcon',))
+              IMPORT_NAME             13 (PySide6.QtGui)
+              IMPORT_FROM             14 (QIcon)
+              STORE_NAME              14 (QIcon)
+              POP_TOP
+
+ 11           LOAD_CONST               0 (0)
+              LOAD_CONST               5 (('MainApp',))
+              IMPORT_NAME             15 (main_app)
+              IMPORT_FROM             16 (MainApp)
+              STORE_NAME              16 (MainApp)
+              POP_TOP
+
+ 12           LOAD_CONST               0 (0)
+              LOAD_CONST               6 (('LoginPage',))
+              IMPORT_NAME             17 (login)
+              IMPORT_FROM             18 (LoginPage)
+              STORE_NAME              18 (LoginPage)
+              POP_TOP
+
+ 13           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME             19 (utils)
+              STORE_NAME              19 (utils)
+
+ 17           LOAD_CONST              22 ((10,))
+              LOAD_CONST               7 (<code object random_name at 0x7f15fb117750, file "main.py", line 17>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              20 (random_name)
+
+ 22           LOAD_CONST               8 (<code object get_appdata_folder at 0x7f15fb196fa0, file "main.py", line 22>)
+              MAKE_FUNCTION
+              STORE_NAME              21 (get_appdata_folder)
+
+ 29           LOAD_CONST               9 (<code object cleanup_old_exes at 0x7f15fb191b30, file "main.py", line 29>)
+              MAKE_FUNCTION
+              STORE_NAME              22 (cleanup_old_exes)
+
+ 38           LOAD_CONST              10 (<code object clone_and_run_in_appdata at 0x7f15fb10b430, file "main.py", line 38>)
+              MAKE_FUNCTION
+              STORE_NAME              23 (clone_and_run_in_appdata)
+
+ 50           LOAD_NAME               24 (getattr)
+              PUSH_NULL
+              LOAD_NAME                0 (sys)
+              LOAD_CONST              11 ('frozen')
+              LOAD_CONST              12 (False)
+              CALL                     3
+              TO_BOOL
+              POP_JUMP_IF_FALSE      104 (to L1)
+
+ 51           LOAD_NAME                1 (os)
+              LOAD_ATTR               50 (path)
+              LOAD_ATTR               53 (abspath + NULL|self)
+              LOAD_NAME                0 (sys)
+              LOAD_ATTR               54 (argv)
+              LOAD_CONST               0 (0)
+              BINARY_SUBSCR
+              CALL                     1
+              STORE_NAME              28 (current_path)
+
+ 52           LOAD_NAME               21 (get_appdata_folder)
+              PUSH_NULL
+              CALL                     0
+              STORE_NAME              29 (appdata_folder)
+
+ 53           LOAD_NAME               28 (current_path)
+              LOAD_ATTR               61 (lower + NULL|self)
+              CALL                     0
+              LOAD_ATTR               63 (startswith + NULL|self)
+              LOAD_NAME               29 (appdata_folder)
+              LOAD_ATTR               61 (lower + NULL|self)
+              CALL                     0
+              CALL                     1
+              TO_BOOL
+              POP_JUMP_IF_TRUE         7 (to L1)
+
+ 54           LOAD_NAME               23 (clone_and_run_in_appdata)
+              PUSH_NULL
+              CALL                     0
+              POP_TOP
+
+ 58   L1:     LOAD_CONST              13 (<code object fade_out at 0x7f15fb14da70, file "main.py", line 58>)
+              MAKE_FUNCTION
+              STORE_NAME              32 (fade_out)
+
+ 69           LOAD_NAME               33 (__name__)
+              LOAD_CONST              14 ('__main__')
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE      252 (to L2)
+
+ 70           LOAD_NAME                7 (QApplication)
+              PUSH_NULL
+              LOAD_NAME                0 (sys)
+              LOAD_ATTR               54 (argv)
+              CALL                     1
+              STORE_NAME              34 (app)
+
+ 71           LOAD_NAME               34 (app)
+              LOAD_ATTR               71 (setWindowIcon + NULL|self)
+              LOAD_NAME               14 (QIcon)
+              PUSH_NULL
+              LOAD_NAME               19 (utils)
+              LOAD_ATTR               72 (resource_path)
+              PUSH_NULL
+              LOAD_CONST              15 ('resources\\icon.ico')
+              CALL                     1
+              CALL                     1
+              CALL                     1
+              POP_TOP
+
+ 74           LOAD_NAME                8 (QLabel)
+              PUSH_NULL
+              LOAD_CONST              16 ('Ứng dụng đang được khởi động...')
+              CALL                     1
+              STORE_NAME              37 (splash)
+
+ 75           LOAD_NAME               37 (splash)
+              LOAD_ATTR               77 (setWindowFlag + NULL|self)
+              LOAD_NAME               10 (Qt)
+              LOAD_ATTR               78 (FramelessWindowHint)
+              CALL                     1
+              POP_TOP
+
+ 76           LOAD_NAME               37 (splash)
+              LOAD_ATTR               77 (setWindowFlag + NULL|self)
+              LOAD_NAME               10 (Qt)
+              LOAD_ATTR               80 (WindowStaysOnTopHint)
+              CALL                     1
+              POP_TOP
+
+ 77           LOAD_NAME               37 (splash)
+              LOAD_ATTR               83 (setAlignment + NULL|self)
+              LOAD_NAME               10 (Qt)
+              LOAD_ATTR               84 (AlignCenter)
+              CALL                     1
+              POP_TOP
+
+ 78           LOAD_NAME               37 (splash)
+              LOAD_ATTR               87 (setStyleSheet + NULL|self)
+              LOAD_CONST              17 ('\n        background-color: #1e293b;\n        color: white;\n        font-size: 18px;\n        padding: 30px;\n        border-radius: 12px;\n        border: 1px solid #334155;\n    ')
+              CALL                     1
+              POP_TOP
+
+ 86           LOAD_NAME               37 (splash)
+              LOAD_ATTR               89 (resize + NULL|self)
+              LOAD_CONST              18 (360)
+              LOAD_CONST              19 (120)
+              CALL                     2
+              POP_TOP
+
+ 87           LOAD_NAME               37 (splash)
+              LOAD_ATTR               91 (show + NULL|self)
+              CALL                     0
+              POP_TOP
+
+ 90           LOAD_CONST              20 (<code object start_main at 0x7f15fb123e10, file "main.py", line 90>)
+              MAKE_FUNCTION
+              STORE_NAME              46 (start_main)
+
+107           LOAD_NAME               11 (QTimer)
+              LOAD_ATTR               94 (singleShot)
+              PUSH_NULL
+              LOAD_CONST              21 (200)
+              LOAD_NAME               46 (start_main)
+              CALL                     2
+              POP_TOP
+
+109           LOAD_NAME                0 (sys)
+              LOAD_ATTR               96 (exit)
+              PUSH_NULL
+              LOAD_NAME               34 (app)
+              LOAD_ATTR               99 (exec + NULL|self)
+              CALL                     0
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             1 (None)
+
+ 69   L2:     RETURN_CONST             1 (None)
+
+Disassembly of <code object random_name at 0x7f15fb117750, file "main.py", line 17>:
+ 17           RESUME                   0
+
+ 18           LOAD_CONST               1 ('')
+              LOAD_ATTR                1 (join + NULL|self)
+              LOAD_GLOBAL              2 (random)
+              LOAD_ATTR                4 (choices)
+              PUSH_NULL
+              LOAD_GLOBAL              6 (string)
+              LOAD_ATTR                8 (ascii_letters)
+              LOAD_GLOBAL              6 (string)
+              LOAD_ATTR               10 (digits)
+              BINARY_OP                0 (+)
+              LOAD_FAST                0 (length)
+              LOAD_CONST               2 (('k',))
+              CALL_KW                  2
+              CALL                     1
+              RETURN_VALUE
+
+Disassembly of <code object get_appdata_folder at 0x7f15fb196fa0, file "main.py", line 22>:
+ 22           RESUME                   0
+
+ 23           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                2 (getenv)
+              PUSH_NULL
+              LOAD_CONST               1 ('APPDATA')
+              CALL                     1
+              STORE_FAST               0 (appdata)
+
+ 24           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                4 (path)
+              LOAD_ATTR                7 (join + NULL|self)
+              LOAD_FAST                0 (appdata)
+              LOAD_CONST               2 ('Panda')
+              CALL                     2
+              STORE_FAST               1 (folder)
+
+ 25           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                8 (makedirs)
+              PUSH_NULL
+              LOAD_FAST                1 (folder)
+              LOAD_CONST               3 (True)
+              LOAD_CONST               4 (('exist_ok',))
+              CALL_KW                  2
+              POP_TOP
+
+ 26           LOAD_FAST                1 (folder)
+              RETURN_VALUE
+
+Disassembly of <code object cleanup_old_exes at 0x7f15fb191b30, file "main.py", line 29>:
+  29           RESUME                   0
+
+  30           LOAD_GLOBAL              0 (os)
+               LOAD_ATTR                2 (listdir)
+               PUSH_NULL
+               LOAD_FAST                0 (folder)
+               CALL                     1
+               GET_ITER
+       L1:     FOR_ITER                79 (to L5)
+               STORE_FAST               1 (file)
+
+  31           LOAD_FAST                1 (file)
+               LOAD_ATTR                5 (endswith + NULL|self)
+               LOAD_CONST               1 ('.exe')
+               CALL                     1
+               TO_BOOL
+               POP_JUMP_IF_TRUE         2 (to L2)
+               JUMP_BACKWARD           27 (to L1)
+
+  32   L2:     NOP
+
+  33   L3:     LOAD_GLOBAL              0 (os)
+               LOAD_ATTR                6 (remove)
+               PUSH_NULL
+               LOAD_GLOBAL              0 (os)
+               LOAD_ATTR                8 (path)
+               LOAD_ATTR               11 (join + NULL|self)
+               LOAD_FAST_LOAD_FAST      1 (folder, file)
+               CALL                     2
+               CALL                     1
+               POP_TOP
+       L4:     JUMP_BACKWARD           81 (to L1)
+
+  30   L5:     END_FOR
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+  --   L6:     PUSH_EXC_INFO
+
+  34           POP_TOP
+
+  35   L7:     POP_EXCEPT
+               JUMP_BACKWARD           89 (to L1)
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L3 to L4 -> L6 [1]
+  L6 to L7 -> L8 [2] lasti
+
+Disassembly of <code object clone_and_run_in_appdata at 0x7f15fb10b430, file "main.py", line 38>:
+ 38           RESUME                   0
+
+ 39           LOAD_GLOBAL              0 (sys)
+              LOAD_ATTR                2 (argv)
+              LOAD_CONST               1 (0)
+              BINARY_SUBSCR
+              STORE_FAST               0 (exe_path)
+
+ 40           LOAD_GLOBAL              5 (get_appdata_folder + NULL)
+              CALL                     0
+              STORE_FAST               1 (folder)
+
+ 41           LOAD_GLOBAL              7 (cleanup_old_exes + NULL)
+              LOAD_FAST                1 (folder)
+              CALL                     1
+              POP_TOP
+
+ 42           LOAD_GLOBAL              9 (random_name + NULL)
+              CALL                     0
+              FORMAT_SIMPLE
+              LOAD_CONST               2 ('.exe')
+              BUILD_STRING             2
+              STORE_FAST               2 (new_name)
+
+ 43           LOAD_GLOBAL             10 (os)
+              LOAD_ATTR               12 (path)
+              LOAD_ATTR               15 (join + NULL|self)
+              LOAD_FAST_LOAD_FAST     18 (folder, new_name)
+              CALL                     2
+              STORE_FAST               3 (new_path)
+
+ 44           LOAD_GLOBAL             16 (shutil)
+              LOAD_ATTR               18 (copy)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST      3 (exe_path, new_path)
+              CALL                     2
+              POP_TOP
+
+ 45           LOAD_GLOBAL             20 (subprocess)
+              LOAD_ATTR               22 (Popen)
+              PUSH_NULL
+              LOAD_FAST                3 (new_path)
+              BUILD_LIST               1
+              CALL                     1
+              POP_TOP
+
+ 46           LOAD_GLOBAL              0 (sys)
+              LOAD_ATTR               24 (exit)
+              PUSH_NULL
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object fade_out at 0x7f15fb14da70, file "main.py", line 58>:
+  --           MAKE_CELL                0 (widget)
+               MAKE_CELL                1 (on_done)
+
+  58           RESUME                   0
+
+  59           LOAD_GLOBAL              1 (QPropertyAnimation + NULL)
+               LOAD_DEREF               0 (widget)
+               LOAD_CONST               1 (b'windowOpacity')
+               CALL                     2
+               STORE_FAST               2 (anim)
+
+  60           LOAD_FAST                2 (anim)
+               LOAD_ATTR                3 (setDuration + NULL|self)
+               LOAD_CONST               2 (600)
+               CALL                     1
+               POP_TOP
+
+  61           LOAD_FAST                2 (anim)
+               LOAD_ATTR                5 (setStartValue + NULL|self)
+               LOAD_CONST               3 (1)
+               CALL                     1
+               POP_TOP
+
+  62           LOAD_FAST                2 (anim)
+               LOAD_ATTR                7 (setEndValue + NULL|self)
+               LOAD_CONST               4 (0)
+               CALL                     1
+               POP_TOP
+
+  63           LOAD_FAST                2 (anim)
+               LOAD_ATTR                8 (finished)
+               LOAD_ATTR               11 (connect + NULL|self)
+               LOAD_FAST                1 (on_done)
+               LOAD_FAST                0 (widget)
+               BUILD_TUPLE              2
+               LOAD_CONST               5 (<code object <lambda> at 0x7f15fafbee30, file "main.py", line 63>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               CALL                     1
+               POP_TOP
+
+  64           LOAD_FAST                2 (anim)
+               LOAD_ATTR               13 (start + NULL|self)
+               CALL                     0
+               POP_TOP
+
+  65           LOAD_FAST                2 (anim)
+               LOAD_DEREF               0 (widget)
+               STORE_ATTR               7 (anim)
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f15fafbee30, file "main.py", line 63>:
+  --           COPY_FREE_VARS           2
+
+  63           RESUME                   0
+               LOAD_DEREF               1 (widget)
+               LOAD_ATTR                1 (close + NULL|self)
+               CALL                     0
+               LOAD_DEREF               0 (on_done)
+               PUSH_NULL
+               CALL                     0
+               BUILD_TUPLE              2
+               RETURN_VALUE
+
+Disassembly of <code object start_main at 0x7f15fb123e10, file "main.py", line 90>:
+  --           MAKE_CELL                0 (wait_until_visible)
+
+  90           RESUME                   0
+
+  93           LOAD_GLOBAL              1 (MainApp + NULL)
+               CALL                     0
+               STORE_GLOBAL             1 (main_app)
+
+  94           LOAD_GLOBAL              5 (LoginPage + NULL)
+               LOAD_GLOBAL              2 (main_app)
+               LOAD_GLOBAL              2 (main_app)
+               LOAD_ATTR                6 (stacked_widget)
+               CALL                     2
+               STORE_GLOBAL             4 (login_page)
+
+  97           LOAD_FAST                0 (wait_until_visible)
+               BUILD_TUPLE              1
+               LOAD_CONST               1 (<code object wait_until_visible at 0x7f15fb123730, file "main.py", line 97>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_DEREF              0 (wait_until_visible)
+
+ 103           LOAD_GLOBAL              2 (main_app)
+               LOAD_ATTR               11 (show + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 104           LOAD_DEREF               0 (wait_until_visible)
+               PUSH_NULL
+               CALL                     0
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object wait_until_visible at 0x7f15fb123730, file "main.py", line 97>:
+  --           COPY_FREE_VARS           1
+
+  97           RESUME                   0
+
+  98           LOAD_GLOBAL              0 (main_app)
+               LOAD_ATTR                3 (isVisible + NULL|self)
+               CALL                     0
+               TO_BOOL
+               POP_JUMP_IF_FALSE       18 (to L1)
+
+  99           LOAD_GLOBAL              5 (fade_out + NULL)
+               LOAD_GLOBAL              6 (splash)
+               LOAD_CONST               1 (<code object <lambda> at 0x7f15fafed210, file "main.py", line 99>)
+               MAKE_FUNCTION
+               CALL                     2
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+ 101   L1:     LOAD_GLOBAL              8 (QTimer)
+               LOAD_ATTR               10 (singleShot)
+               PUSH_NULL
+               LOAD_CONST               2 (100)
+               LOAD_DEREF               0 (wait_until_visible)
+               CALL                     2
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f15fafed210, file "main.py", line 99>:
+ 99           RESUME                   0
+              RETURN_CONST             0 (None)
+

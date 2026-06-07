@@ -1,0 +1,406 @@
+# Full disassembly of module: account_manager
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, None, ('datetime',), ('WEBSITE_URL', 'notice_and_shutdown'), 'AccountStatusManager']
+# names: ['threading', 'datetime', 'sys', 'signal', 'utils', 'WEBSITE_URL', 'notice_and_shutdown', 'requests', 'AccountStatusManager', 'setup_graceful_shutdown']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              0 (threading)
+              STORE_NAME               0 (threading)
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('datetime',))
+              IMPORT_NAME              1 (datetime)
+              IMPORT_FROM              1 (datetime)
+              STORE_NAME               1 (datetime)
+              POP_TOP
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              2 (sys)
+              STORE_NAME               2 (sys)
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              3 (signal)
+              STORE_NAME               3 (signal)
+
+  5           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('WEBSITE_URL', 'notice_and_shutdown'))
+              IMPORT_NAME              4 (utils)
+              IMPORT_FROM              5 (WEBSITE_URL)
+              STORE_NAME               5 (WEBSITE_URL)
+              IMPORT_FROM              6 (notice_and_shutdown)
+              STORE_NAME               6 (notice_and_shutdown)
+              POP_TOP
+
+  9           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              7 (requests)
+              STORE_NAME               7 (requests)
+
+ 11           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               4 (<code object AccountStatusManager at 0x7f15fafbef30, file "account_manager.py", line 11>)
+              MAKE_FUNCTION
+              LOAD_CONST               5 ('AccountStatusManager')
+              CALL                     2
+              STORE_NAME               8 (AccountStatusManager)
+
+ 84           LOAD_CONST               6 (<code object setup_graceful_shutdown at 0x7f15fb196b50, file "account_manager.py", line 84>)
+              MAKE_FUNCTION
+              STORE_NAME               9 (setup_graceful_shutdown)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object AccountStatusManager at 0x7f15fafbef30, file "account_manager.py", line 11>:
+ 11           RESUME                   0
+              LOAD_NAME                0 (__name__)
+              STORE_NAME               1 (__module__)
+              LOAD_CONST               0 ('AccountStatusManager')
+              STORE_NAME               2 (__qualname__)
+              LOAD_CONST               1 (11)
+              STORE_NAME               3 (__firstlineno__)
+
+ 12           LOAD_CONST               2 (<code object __init__ at 0x7f15fafea470, file "account_manager.py", line 12>)
+              MAKE_FUNCTION
+              STORE_NAME               4 (__init__)
+
+ 26           LOAD_CONST               3 (<code object start_ping_service at 0x7f15fb11df10, file "account_manager.py", line 26>)
+              MAKE_FUNCTION
+              STORE_NAME               5 (start_ping_service)
+
+ 35           LOAD_CONST               4 (<code object _ping_loop at 0x559f5c158820, file "account_manager.py", line 35>)
+              MAKE_FUNCTION
+              STORE_NAME               6 (_ping_loop)
+
+ 65           LOAD_CONST               5 (<code object stop_ping_service at 0x7f15fb0502f0, file "account_manager.py", line 65>)
+              MAKE_FUNCTION
+              STORE_NAME               7 (stop_ping_service)
+
+ 73           LOAD_CONST               6 (<code object update_logout_status at 0x7f15fb008cb0, file "account_manager.py", line 73>)
+              MAKE_FUNCTION
+              STORE_NAME               8 (update_logout_status)
+              LOAD_CONST               7 (('password', 'ping_thread', 'stop_ping_event', 'tool_name', 'username'))
+              STORE_NAME               9 (__static_attributes__)
+              RETURN_CONST             8 (None)
+
+Disassembly of <code object __init__ at 0x7f15fafea470, file "account_manager.py", line 12>:
+ 12           RESUME                   0
+
+ 20           LOAD_FAST_LOAD_FAST     16 (username, self)
+              STORE_ATTR               0 (username)
+
+ 21           LOAD_FAST_LOAD_FAST     48 (password, self)
+              STORE_ATTR               1 (password)
+
+ 22           LOAD_FAST_LOAD_FAST     32 (tool_name, self)
+              STORE_ATTR               2 (tool_name)
+
+ 23           LOAD_CONST               1 (None)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               3 (ping_thread)
+
+ 24           LOAD_GLOBAL              8 (threading)
+              LOAD_ATTR               10 (Event)
+              PUSH_NULL
+              CALL                     0
+              LOAD_FAST                0 (self)
+              STORE_ATTR               6 (stop_ping_event)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object start_ping_service at 0x7f15fb11df10, file "account_manager.py", line 26>:
+ 26           RESUME                   0
+
+ 30           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (stop_ping_event)
+              LOAD_ATTR                3 (clear + NULL|self)
+              CALL                     0
+              POP_TOP
+
+ 31           LOAD_GLOBAL              4 (threading)
+              LOAD_ATTR                6 (Thread)
+              PUSH_NULL
+              LOAD_FAST                0 (self)
+              LOAD_ATTR                8 (_ping_loop)
+              LOAD_CONST               1 (('target',))
+              CALL_KW                  1
+              LOAD_FAST                0 (self)
+              STORE_ATTR               5 (ping_thread)
+
+ 32           LOAD_CONST               2 (True)
+              LOAD_FAST                0 (self)
+              LOAD_ATTR               10 (ping_thread)
+              STORE_ATTR               6 (daemon)
+
+ 33           LOAD_FAST                0 (self)
+              LOAD_ATTR               10 (ping_thread)
+              LOAD_ATTR               15 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             3 (None)
+
+Disassembly of <code object _ping_loop at 0x559f5c158820, file "account_manager.py", line 35>:
+  35            RESUME                   0
+
+  39            LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_ping_event)
+                LOAD_ATTR                3 (is_set + NULL|self)
+                CALL                     0
+                TO_BOOL
+                POP_JUMP_IF_TRUE       190 (to L6)
+
+  40    L1:     NOP
+
+  42    L2:     LOAD_GLOBAL              4 (WEBSITE_URL)
+                FORMAT_SIMPLE
+                LOAD_CONST               1 ('/api/tool/ping')
+                BUILD_STRING             2
+                STORE_FAST               1 (url)
+
+  44            LOAD_FAST                0 (self)
+                LOAD_ATTR                6 (username)
+
+  45            LOAD_FAST                0 (self)
+                LOAD_ATTR                8 (password)
+
+  46            LOAD_FAST                0 (self)
+                LOAD_ATTR               10 (tool_name)
+
+  47            LOAD_CONST               2 ('ping')
+
+  43            LOAD_CONST               3 (('username', 'password', 'toolname', 'type'))
+                BUILD_CONST_KEY_MAP      4
+                STORE_FAST               2 (payload)
+
+  50            LOAD_GLOBAL             12 (requests)
+                LOAD_ATTR               14 (post)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     18 (url, payload)
+                LOAD_CONST               4 (('json',))
+                CALL_KW                  2
+                LOAD_ATTR               17 (json + NULL|self)
+                CALL                     0
+                STORE_FAST               3 (response)
+
+  52            LOAD_GLOBAL             19 (print + NULL)
+                LOAD_FAST                3 (response)
+                CALL                     1
+                POP_TOP
+
+  53            LOAD_FAST                3 (response)
+                LOAD_CONST               5 ('success')
+                BINARY_SUBSCR
+                LOAD_CONST               6 (False)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       28 (to L3)
+
+  54            LOAD_FAST                0 (self)
+                LOAD_ATTR               21 (update_logout_status + NULL|self)
+                CALL                     0
+                POP_TOP
+
+  55            LOAD_GLOBAL             23 (notice_and_shutdown + NULL)
+                LOAD_CONST               7 ('Thông Báo!')
+                LOAD_CONST               8 ('Tài khoản của bạn đã hết hạn')
+                CALL                     2
+                POP_TOP
+
+  60    L3:     LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_ping_event)
+                LOAD_ATTR               25 (wait + NULL|self)
+                LOAD_CONST               9 (180)
+                CALL                     1
+                POP_TOP
+
+  39    L4:     LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_ping_event)
+                LOAD_ATTR                3 (is_set + NULL|self)
+                CALL                     0
+                TO_BOOL
+                POP_JUMP_IF_TRUE         2 (to L5)
+                JUMP_BACKWARD          189 (to L1)
+        L5:     RETURN_CONST            10 (None)
+        L6:     RETURN_CONST            10 (None)
+
+  --    L7:     PUSH_EXC_INFO
+
+  62            LOAD_GLOBAL             26 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       37 (to L11)
+                STORE_FAST               4 (e)
+
+  63    L8:     LOAD_FAST                0 (self)
+                LOAD_ATTR                0 (stop_ping_event)
+                LOAD_ATTR               25 (wait + NULL|self)
+                LOAD_CONST               9 (180)
+                CALL                     1
+                POP_TOP
+        L9:     POP_EXCEPT
+                LOAD_CONST              10 (None)
+                STORE_FAST               4 (e)
+                DELETE_FAST              4 (e)
+                JUMP_BACKWARD_NO_INTERRUPT 77 (to L4)
+
+  --   L10:     LOAD_CONST              10 (None)
+                STORE_FAST               4 (e)
+                DELETE_FAST              4 (e)
+                RERAISE                  1
+
+  62   L11:     RERAISE                  0
+
+  --   L12:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L2 to L4 -> L7 [0]
+  L7 to L8 -> L12 [1] lasti
+  L8 to L9 -> L10 [1] lasti
+  L10 to L12 -> L12 [1] lasti
+
+Disassembly of <code object stop_ping_service at 0x7f15fb0502f0, file "account_manager.py", line 65>:
+ 65           RESUME                   0
+
+ 69           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (stop_ping_event)
+              LOAD_ATTR                3 (set + NULL|self)
+              CALL                     0
+              POP_TOP
+
+ 70           LOAD_FAST                0 (self)
+              LOAD_ATTR                4 (ping_thread)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       27 (to L1)
+
+ 71           LOAD_FAST                0 (self)
+              LOAD_ATTR                4 (ping_thread)
+              LOAD_ATTR                7 (join + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             1 (None)
+
+ 70   L1:     RETURN_CONST             1 (None)
+
+Disassembly of <code object update_logout_status at 0x7f15fb008cb0, file "account_manager.py", line 73>:
+  73           RESUME                   0
+
+  77           NOP
+
+  78   L1:     LOAD_GLOBAL              0 (WEBSITE_URL)
+               FORMAT_SIMPLE
+               LOAD_CONST               1 ('/api/tool/logout')
+               BUILD_STRING             2
+               STORE_FAST               1 (url)
+
+  79           LOAD_CONST               2 ('username')
+               LOAD_FAST                0 (self)
+               LOAD_ATTR                2 (username)
+               BUILD_MAP                1
+               STORE_FAST               2 (payload)
+
+  80           LOAD_GLOBAL              4 (requests)
+               LOAD_ATTR                6 (post)
+               PUSH_NULL
+               LOAD_FAST_LOAD_FAST     18 (url, payload)
+               LOAD_CONST               3 (('json',))
+               CALL_KW                  2
+               LOAD_ATTR                9 (json + NULL|self)
+               CALL                     0
+               STORE_FAST               3 (res)
+       L2:     RETURN_CONST             4 (None)
+
+  --   L3:     PUSH_EXC_INFO
+
+  81           LOAD_GLOBAL             10 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       21 (to L7)
+               STORE_FAST               4 (e)
+
+  82   L4:     LOAD_GLOBAL             13 (print + NULL)
+               LOAD_FAST                4 (e)
+               CALL                     1
+               POP_TOP
+       L5:     POP_EXCEPT
+               LOAD_CONST               4 (None)
+               STORE_FAST               4 (e)
+               DELETE_FAST              4 (e)
+               RETURN_CONST             4 (None)
+
+  --   L6:     LOAD_CONST               4 (None)
+               STORE_FAST               4 (e)
+               DELETE_FAST              4 (e)
+               RERAISE                  1
+
+  81   L7:     RERAISE                  0
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [0]
+  L3 to L4 -> L8 [1] lasti
+  L4 to L5 -> L6 [1] lasti
+  L6 to L8 -> L8 [1] lasti
+
+Disassembly of <code object setup_graceful_shutdown at 0x7f15fb196b50, file "account_manager.py", line 84>:
+  --           MAKE_CELL                0 (account_manager)
+
+  84           RESUME                   0
+
+  91           LOAD_FAST                0 (account_manager)
+               BUILD_TUPLE              1
+               LOAD_CONST               1 (<code object signal_handler at 0x7f15fb1174b0, file "account_manager.py", line 91>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_FAST               1 (signal_handler)
+
+ 103           LOAD_GLOBAL              0 (signal)
+               LOAD_ATTR                0 (signal)
+               PUSH_NULL
+               LOAD_GLOBAL              0 (signal)
+               LOAD_ATTR                2 (SIGINT)
+               LOAD_FAST                1 (signal_handler)
+               CALL                     2
+               POP_TOP
+
+ 104           LOAD_GLOBAL              0 (signal)
+               LOAD_ATTR                0 (signal)
+               PUSH_NULL
+               LOAD_GLOBAL              0 (signal)
+               LOAD_ATTR                4 (SIGTERM)
+               LOAD_FAST                1 (signal_handler)
+               CALL                     2
+               POP_TOP
+               RETURN_CONST             2 (None)
+
+Disassembly of <code object signal_handler at 0x7f15fb1174b0, file "account_manager.py", line 91>:
+  --           COPY_FREE_VARS           1
+
+  91           RESUME                   0
+
+  92           LOAD_GLOBAL              1 (print + NULL)
+               LOAD_CONST               1 ('\nĐang đóng ứng dụng...')
+               CALL                     1
+               POP_TOP
+
+  94           LOAD_DEREF               2 (account_manager)
+               LOAD_ATTR                3 (stop_ping_service + NULL|self)
+               CALL                     0
+               POP_TOP
+
+  97           LOAD_DEREF               2 (account_manager)
+               LOAD_ATTR                5 (update_logout_status + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 100           LOAD_GLOBAL              6 (sys)
+               LOAD_ATTR                8 (exit)
+               PUSH_NULL
+               LOAD_CONST               2 (0)
+               CALL                     1
+               POP_TOP
+               RETURN_CONST             0 (None)
+

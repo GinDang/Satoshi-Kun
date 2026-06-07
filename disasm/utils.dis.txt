@@ -1,0 +1,857 @@
+# Full disassembly of module: utils
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, None, ('datetime', 'timedelta'), ('MongoClient',), ('ObjectId',), ('load_dotenv',), ('Fernet',), 'gta5vn-3-nghe', '1.0.1', 'https://www.cyphersoft.store', ('Username', 'DeviceChangesToday'), 'password', 'salt', 'return', 'hashed_password', ('gtav_autobot',), (0, 10)]
+# names: ['os', 'sys', 'win32com.client', 'win32com', 'requests', 'ctypes', 'threading', 'time', 'hashlib', 'json', 'datetime', 'timedelta', 'pymongo', 'MongoClient', 'bson', 'ObjectId', 'dotenv', 'load_dotenv', 'cryptography.fernet', 'Fernet', 'Tool_Name', 'Tool_Version', 'WEBSITE_URL', 'CURRENT_USER', 'set_current_user', 'get_current_username', 'get_current_user_device_changes', 'clear_current_user', 'config_path_AppData', 'save_login', 'load_login', 'str', 'hash_password_sha256', 'bool', 'check_password_sha256', 'resource_path', 'get_system_uuid', 'get_location', 'show_message', 'force_shutdown', 'notice_and_shutdown', 'get_current_time']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              0 (os)
+              STORE_NAME               0 (os)
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              1 (sys)
+              STORE_NAME               1 (sys)
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              2 (win32com.client)
+              STORE_NAME               3 (win32com)
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              4 (requests)
+              STORE_NAME               4 (requests)
+
+  5           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              5 (ctypes)
+              STORE_NAME               5 (ctypes)
+
+  6           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              6 (threading)
+              STORE_NAME               6 (threading)
+
+  7           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              7 (time)
+              STORE_NAME               7 (time)
+
+  8           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              8 (hashlib)
+              STORE_NAME               8 (hashlib)
+
+  9           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              9 (json)
+              STORE_NAME               9 (json)
+
+ 10           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('datetime', 'timedelta'))
+              IMPORT_NAME             10 (datetime)
+              IMPORT_FROM             10 (datetime)
+              STORE_NAME              10 (datetime)
+              IMPORT_FROM             11 (timedelta)
+              STORE_NAME              11 (timedelta)
+              POP_TOP
+
+ 11           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('MongoClient',))
+              IMPORT_NAME             12 (pymongo)
+              IMPORT_FROM             13 (MongoClient)
+              STORE_NAME              13 (MongoClient)
+              POP_TOP
+
+ 12           LOAD_CONST               0 (0)
+              LOAD_CONST               4 (('ObjectId',))
+              IMPORT_NAME             14 (bson)
+              IMPORT_FROM             15 (ObjectId)
+              STORE_NAME              15 (ObjectId)
+              POP_TOP
+
+ 13           LOAD_CONST               0 (0)
+              LOAD_CONST               5 (('load_dotenv',))
+              IMPORT_NAME             16 (dotenv)
+              IMPORT_FROM             17 (load_dotenv)
+              STORE_NAME              17 (load_dotenv)
+              POP_TOP
+
+ 14           LOAD_CONST               0 (0)
+              LOAD_CONST               6 (('Fernet',))
+              IMPORT_NAME             18 (cryptography.fernet)
+              IMPORT_FROM             19 (Fernet)
+              STORE_NAME              19 (Fernet)
+              POP_TOP
+
+ 17           LOAD_NAME               17 (load_dotenv)
+              PUSH_NULL
+              CALL                     0
+              POP_TOP
+
+ 20           LOAD_CONST               7 ('gta5vn-3-nghe')
+              STORE_NAME              20 (Tool_Name)
+
+ 21           LOAD_CONST               8 ('1.0.1')
+              STORE_NAME              21 (Tool_Version)
+
+ 23           LOAD_CONST               9 ('https://www.cyphersoft.store')
+              STORE_NAME              22 (WEBSITE_URL)
+
+ 27           LOAD_CONST               1 (None)
+
+ 28           LOAD_CONST               0 (0)
+
+ 26           LOAD_CONST              10 (('Username', 'DeviceChangesToday'))
+              BUILD_CONST_KEY_MAP      2
+              STORE_GLOBAL            23 (CURRENT_USER)
+
+ 31           LOAD_CONST              11 (<code object set_current_user at 0x7f15fafcc5d0, file "utils.py", line 31>)
+              MAKE_FUNCTION
+              STORE_NAME              24 (set_current_user)
+
+ 36           LOAD_CONST              12 (<code object get_current_username at 0x7f15fb007d70, file "utils.py", line 36>)
+              MAKE_FUNCTION
+              STORE_NAME              25 (get_current_username)
+
+ 40           LOAD_CONST              13 (<code object get_current_user_device_changes at 0x7f15fb007670, file "utils.py", line 40>)
+              MAKE_FUNCTION
+              STORE_NAME              26 (get_current_user_device_changes)
+
+ 44           LOAD_CONST              14 (<code object clear_current_user at 0x7f15faeac030, file "utils.py", line 44>)
+              MAKE_FUNCTION
+              STORE_NAME              27 (clear_current_user)
+
+ 52           LOAD_CONST              15 (<code object config_path_AppData at 0x7f15fb11e730, file "utils.py", line 52>)
+              MAKE_FUNCTION
+              STORE_NAME              28 (config_path_AppData)
+
+ 58           LOAD_CONST              16 (<code object save_login at 0x7f15fb1979b0, file "utils.py", line 58>)
+              MAKE_FUNCTION
+              STORE_NAME              29 (save_login)
+
+ 64           LOAD_CONST              17 (<code object load_login at 0x559f5c20ff00, file "utils.py", line 64>)
+              MAKE_FUNCTION
+              STORE_NAME              30 (load_login)
+
+ 80           LOAD_CONST              31 (('gtav_autobot',))
+              LOAD_CONST              18 ('password')
+              LOAD_NAME               31 (str)
+              LOAD_CONST              19 ('salt')
+              LOAD_NAME               31 (str)
+              LOAD_CONST              20 ('return')
+              LOAD_NAME               31 (str)
+              BUILD_TUPLE              6
+              LOAD_CONST              21 (<code object hash_password_sha256 at 0x7f15fafea830, file "utils.py", line 80>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   4 (annotations)
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              32 (hash_password_sha256)
+
+ 84           LOAD_CONST              31 (('gtav_autobot',))
+              LOAD_CONST              18 ('password')
+              LOAD_NAME               31 (str)
+              LOAD_CONST              22 ('hashed_password')
+              LOAD_NAME               31 (str)
+              LOAD_CONST              19 ('salt')
+              LOAD_NAME               31 (str)
+              LOAD_CONST              20 ('return')
+              LOAD_NAME               33 (bool)
+              BUILD_TUPLE              8
+              LOAD_CONST              23 (<code object check_password_sha256 at 0x7f15fafced30, file "utils.py", line 84>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   4 (annotations)
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              34 (check_password_sha256)
+
+ 89           LOAD_CONST              24 (<code object resource_path at 0x7f15fb00b3c0, file "utils.py", line 89>)
+              MAKE_FUNCTION
+              STORE_NAME              35 (resource_path)
+
+ 97           LOAD_CONST              25 (<code object get_system_uuid at 0x7f15fb166d30, file "utils.py", line 97>)
+              MAKE_FUNCTION
+              STORE_NAME              36 (get_system_uuid)
+
+106           LOAD_CONST              26 (<code object get_location at 0x559f5c20c4c0, file "utils.py", line 106>)
+              MAKE_FUNCTION
+              STORE_NAME              37 (get_location)
+
+121           LOAD_CONST              32 ((0, 10))
+              LOAD_CONST              27 (<code object show_message at 0x7f15fafea970, file "utils.py", line 121>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              38 (show_message)
+
+129           LOAD_CONST              28 (<code object force_shutdown at 0x7f15fb197c90, file "utils.py", line 129>)
+              MAKE_FUNCTION
+              STORE_NAME              39 (force_shutdown)
+
+137           LOAD_CONST              29 (<code object notice_and_shutdown at 0x7f15fb166eb0, file "utils.py", line 137>)
+              MAKE_FUNCTION
+              STORE_NAME              40 (notice_and_shutdown)
+
+143           LOAD_CONST              30 (<code object get_current_time at 0x559f5c20fc10, file "utils.py", line 143>)
+              MAKE_FUNCTION
+              STORE_NAME              41 (get_current_time)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object set_current_user at 0x7f15fafcc5d0, file "utils.py", line 31>:
+ 31           RESUME                   0
+
+ 33           LOAD_FAST                0 (username)
+              LOAD_GLOBAL              0 (CURRENT_USER)
+              LOAD_CONST               1 ('Username')
+              STORE_SUBSCR
+
+ 34           LOAD_FAST                1 (device_changes_today)
+              LOAD_GLOBAL              0 (CURRENT_USER)
+              LOAD_CONST               2 ('DeviceChangesToday')
+              STORE_SUBSCR
+              RETURN_CONST             3 (None)
+
+Disassembly of <code object get_current_username at 0x7f15fb007d70, file "utils.py", line 36>:
+ 36           RESUME                   0
+
+ 38           LOAD_GLOBAL              0 (CURRENT_USER)
+              LOAD_CONST               1 ('Username')
+              BINARY_SUBSCR
+              RETURN_VALUE
+
+Disassembly of <code object get_current_user_device_changes at 0x7f15fb007670, file "utils.py", line 40>:
+ 40           RESUME                   0
+
+ 42           LOAD_GLOBAL              0 (CURRENT_USER)
+              LOAD_CONST               1 ('DeviceChangesToday')
+              BINARY_SUBSCR
+              RETURN_VALUE
+
+Disassembly of <code object clear_current_user at 0x7f15faeac030, file "utils.py", line 44>:
+ 44           RESUME                   0
+
+ 48           LOAD_CONST               1 (None)
+
+ 49           LOAD_CONST               2 (0)
+
+ 47           LOAD_CONST               3 (('Username', 'DeviceChangesToday'))
+              BUILD_CONST_KEY_MAP      2
+              STORE_GLOBAL             0 (CURRENT_USER)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object config_path_AppData at 0x7f15fb11e730, file "utils.py", line 52>:
+ 52           RESUME                   0
+
+ 54           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                2 (path)
+              LOAD_ATTR                5 (join + NULL|self)
+              LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                6 (getenv)
+              PUSH_NULL
+              LOAD_CONST               1 ('APPDATA')
+              CALL                     1
+              LOAD_CONST               2 ('Panda')
+              CALL                     2
+              STORE_FAST               1 (base_dir)
+
+ 55           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                8 (makedirs)
+              PUSH_NULL
+              LOAD_FAST                1 (base_dir)
+              LOAD_CONST               3 (True)
+              LOAD_CONST               4 (('exist_ok',))
+              CALL_KW                  2
+              POP_TOP
+
+ 56           LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                2 (path)
+              LOAD_ATTR                5 (join + NULL|self)
+              LOAD_FAST_LOAD_FAST     16 (base_dir, filename)
+              CALL                     2
+              RETURN_VALUE
+
+Disassembly of <code object save_login at 0x7f15fb1979b0, file "utils.py", line 58>:
+  58           RESUME                   0
+
+  60           LOAD_GLOBAL              1 (config_path_AppData + NULL)
+               LOAD_CONST               1 ('config.json')
+               CALL                     1
+               STORE_FAST               3 (config_file)
+
+  61           LOAD_GLOBAL              3 (open + NULL)
+               LOAD_FAST                3 (config_file)
+               LOAD_CONST               2 ('w')
+               CALL                     2
+               BEFORE_WITH
+       L1:     STORE_FAST               4 (file)
+
+  62           LOAD_GLOBAL              4 (json)
+               LOAD_ATTR                6 (dump)
+               PUSH_NULL
+               LOAD_FAST_LOAD_FAST      1 (username, password)
+               LOAD_FAST                2 (remember)
+               LOAD_CONST               3 (('username', 'password', 'remember'))
+               BUILD_CONST_KEY_MAP      3
+               LOAD_FAST                4 (file)
+               CALL                     2
+               POP_TOP
+
+  61   L2:     LOAD_CONST               4 (None)
+               LOAD_CONST               4 (None)
+               LOAD_CONST               4 (None)
+               CALL                     2
+               POP_TOP
+               RETURN_CONST             4 (None)
+       L3:     PUSH_EXC_INFO
+               WITH_EXCEPT_START
+               TO_BOOL
+               POP_JUMP_IF_TRUE         1 (to L4)
+               RERAISE                  2
+       L4:     POP_TOP
+       L5:     POP_EXCEPT
+               POP_TOP
+               POP_TOP
+               RETURN_CONST             4 (None)
+
+  --   L6:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [1] lasti
+  L3 to L5 -> L6 [3] lasti
+
+Disassembly of <code object load_login at 0x559f5c20ff00, file "utils.py", line 64>:
+  64            RESUME                   0
+
+  66            LOAD_GLOBAL              1 (config_path_AppData + NULL)
+                LOAD_CONST               1 ('config.json')
+                CALL                     1
+                STORE_FAST               0 (config_file)
+
+  67            LOAD_GLOBAL              2 (os)
+                LOAD_ATTR                4 (path)
+                LOAD_ATTR                7 (exists + NULL|self)
+                LOAD_FAST                0 (config_file)
+                CALL                     1
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L1)
+
+  68            RETURN_CONST             2 (('', '', False))
+
+  70    L1:     NOP
+
+  71    L2:     LOAD_GLOBAL              9 (open + NULL)
+                LOAD_FAST                0 (config_file)
+                LOAD_CONST               3 ('r')
+                CALL                     2
+                BEFORE_WITH
+        L3:     STORE_FAST               1 (file)
+
+  72            LOAD_FAST                1 (file)
+                LOAD_ATTR               11 (read + NULL|self)
+                CALL                     0
+                LOAD_ATTR               13 (strip + NULL|self)
+                CALL                     0
+                STORE_FAST               2 (content)
+
+  73            LOAD_FAST                2 (content)
+                TO_BOOL
+                POP_JUMP_IF_TRUE        10 (to L6)
+
+  74            NOP
+
+  71    L4:     LOAD_CONST               4 (None)
+                LOAD_CONST               4 (None)
+                LOAD_CONST               4 (None)
+                CALL                     2
+                POP_TOP
+        L5:     RETURN_CONST             2 (('', '', False))
+
+  75    L6:     LOAD_GLOBAL             14 (json)
+                LOAD_ATTR               16 (loads)
+                PUSH_NULL
+                LOAD_FAST                2 (content)
+                CALL                     1
+                STORE_FAST               3 (data)
+
+  76            LOAD_FAST                3 (data)
+                LOAD_ATTR               19 (get + NULL|self)
+                LOAD_CONST               5 ('username')
+                LOAD_CONST               6 ('')
+                CALL                     2
+                LOAD_FAST                3 (data)
+                LOAD_ATTR               19 (get + NULL|self)
+                LOAD_CONST               7 ('password')
+                LOAD_CONST               6 ('')
+                CALL                     2
+                LOAD_FAST                3 (data)
+                LOAD_ATTR               19 (get + NULL|self)
+                LOAD_CONST               8 ('remember')
+                LOAD_CONST               9 (False)
+                CALL                     2
+                BUILD_TUPLE              3
+
+  71    L7:     SWAP                     2
+                LOAD_CONST               4 (None)
+                LOAD_CONST               4 (None)
+                LOAD_CONST               4 (None)
+                CALL                     2
+                POP_TOP
+        L8:     RETURN_VALUE
+        L9:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L10)
+                RERAISE                  2
+       L10:     POP_TOP
+       L11:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+       L12:     RETURN_CONST             4 (None)
+
+  --   L13:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+       L14:     PUSH_EXC_INFO
+
+  77            LOAD_GLOBAL             14 (json)
+                LOAD_ATTR               20 (JSONDecodeError)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE        3 (to L16)
+                POP_TOP
+
+  78   L15:     POP_EXCEPT
+                RETURN_CONST             2 (('', '', False))
+
+  77   L16:     RERAISE                  0
+
+  --   L17:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L14 [0]
+  L3 to L4 -> L9 [1] lasti
+  L4 to L5 -> L14 [0]
+  L6 to L7 -> L9 [1] lasti
+  L7 to L8 -> L14 [0]
+  L9 to L11 -> L13 [3] lasti
+  L11 to L12 -> L14 [0]
+  L13 to L14 -> L14 [0]
+  L14 to L15 -> L17 [1] lasti
+  L16 to L17 -> L17 [1] lasti
+
+Disassembly of <code object hash_password_sha256 at 0x7f15fafea830, file "utils.py", line 80>:
+ 80           RESUME                   0
+
+ 82           LOAD_GLOBAL              0 (hashlib)
+              LOAD_ATTR                2 (sha256)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     16 (salt, password)
+              BINARY_OP                0 (+)
+              LOAD_ATTR                5 (encode + NULL|self)
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR                7 (hexdigest + NULL|self)
+              CALL                     0
+              RETURN_VALUE
+
+Disassembly of <code object check_password_sha256 at 0x7f15fafced30, file "utils.py", line 84>:
+ 84           RESUME                   0
+
+ 86           LOAD_GLOBAL              1 (hash_password_sha256 + NULL)
+              LOAD_FAST_LOAD_FAST      2 (password, salt)
+              CALL                     2
+              LOAD_FAST                1 (hashed_password)
+              COMPARE_OP              72 (==)
+              RETURN_VALUE
+
+Disassembly of <code object resource_path at 0x7f15fb00b3c0, file "utils.py", line 89>:
+  89           RESUME                   0
+
+  91           NOP
+
+  92   L1:     LOAD_GLOBAL              0 (sys)
+               LOAD_ATTR                2 (_MEIPASS)
+               STORE_FAST               1 (base_path)
+
+  95   L2:     LOAD_GLOBAL              6 (os)
+               LOAD_ATTR                8 (path)
+               LOAD_ATTR               13 (join + NULL|self)
+               LOAD_FAST_LOAD_FAST     16 (base_path, relative_path)
+               CALL                     2
+               RETURN_VALUE
+
+  --   L3:     PUSH_EXC_INFO
+
+  93           LOAD_GLOBAL              4 (AttributeError)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       34 (to L5)
+               POP_TOP
+
+  94           LOAD_GLOBAL              6 (os)
+               LOAD_ATTR                8 (path)
+               LOAD_ATTR               11 (abspath + NULL|self)
+               LOAD_CONST               1 ('.')
+               CALL                     1
+               STORE_FAST               1 (base_path)
+       L4:     POP_EXCEPT
+               JUMP_BACKWARD_NO_INTERRUPT 74 (to L2)
+
+  93   L5:     RERAISE                  0
+
+  --   L6:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [0]
+  L3 to L4 -> L6 [1] lasti
+  L5 to L6 -> L6 [1] lasti
+
+Disassembly of <code object get_system_uuid at 0x7f15fb166d30, file "utils.py", line 97>:
+ 97           RESUME                   0
+
+ 99           LOAD_GLOBAL              0 (win32com)
+              LOAD_ATTR                2 (client)
+              LOAD_ATTR                5 (Dispatch + NULL|self)
+              LOAD_CONST               1 ('WbemScripting.SWbemLocator')
+              CALL                     1
+              STORE_FAST               0 (wmi)
+
+100           LOAD_FAST                0 (wmi)
+              LOAD_ATTR                7 (ConnectServer + NULL|self)
+              LOAD_CONST               2 ('.')
+              LOAD_CONST               3 ('root\\cimv2')
+              CALL                     2
+              STORE_FAST               1 (svc)
+
+101           LOAD_CONST               4 ('SELECT UUID FROM Win32_ComputerSystemProduct')
+              STORE_FAST               2 (query)
+
+102           LOAD_FAST                1 (svc)
+              LOAD_ATTR                9 (ExecQuery + NULL|self)
+              LOAD_FAST                2 (query)
+              CALL                     1
+              STORE_FAST               3 (result)
+
+103           LOAD_FAST                3 (result)
+              GET_ITER
+              FOR_ITER                15 (to L1)
+              STORE_FAST               4 (item)
+
+104           LOAD_FAST                4 (item)
+              LOAD_ATTR               10 (UUID)
+              SWAP                     2
+              POP_TOP
+              RETURN_VALUE
+
+103   L1:     END_FOR
+              POP_TOP
+              RETURN_CONST             5 (None)
+
+Disassembly of <code object get_location at 0x559f5c20c4c0, file "utils.py", line 106>:
+ 106           RESUME                   0
+
+ 108           NOP
+
+ 109   L1:     LOAD_GLOBAL              0 (requests)
+               LOAD_ATTR                2 (get)
+               PUSH_NULL
+               LOAD_CONST               1 ('http://ip-api.com/json/')
+               LOAD_CONST               2 (5)
+               LOAD_CONST               3 (('timeout',))
+               CALL_KW                  2
+               STORE_FAST               0 (response)
+
+ 110           LOAD_FAST                0 (response)
+               LOAD_ATTR                5 (json + NULL|self)
+               CALL                     0
+               STORE_FAST               1 (data)
+
+ 111           LOAD_FAST                1 (data)
+               LOAD_ATTR                3 (get + NULL|self)
+               LOAD_CONST               4 ('status')
+               CALL                     1
+               LOAD_CONST               5 ('success')
+               COMPARE_OP              88 (bool(==))
+               POP_JUMP_IF_FALSE       65 (to L3)
+
+ 112           LOAD_FAST                1 (data)
+               LOAD_ATTR                3 (get + NULL|self)
+               LOAD_CONST               6 ('city')
+               LOAD_CONST               7 ('Unknown')
+               CALL                     2
+               STORE_FAST               2 (city)
+
+ 113           LOAD_FAST                1 (data)
+               LOAD_ATTR                3 (get + NULL|self)
+               LOAD_CONST               8 ('country')
+               LOAD_CONST               7 ('Unknown')
+               CALL                     2
+               STORE_FAST               3 (country)
+
+ 114           LOAD_FAST                1 (data)
+               LOAD_ATTR                3 (get + NULL|self)
+               LOAD_CONST               9 ('query')
+               LOAD_CONST               7 ('Unknown')
+               CALL                     2
+               STORE_FAST               4 (ip)
+
+ 115           LOAD_FAST                2 (city)
+               FORMAT_SIMPLE
+               LOAD_CONST              10 (', ')
+               LOAD_FAST                3 (country)
+               FORMAT_SIMPLE
+               LOAD_CONST              11 (' (IP: ')
+               LOAD_FAST                4 (ip)
+               FORMAT_SIMPLE
+               LOAD_CONST              12 (')')
+               BUILD_STRING             6
+       L2:     RETURN_VALUE
+
+ 116   L3:     RETURN_CONST            13 ('Unknown Location')
+
+  --   L4:     PUSH_EXC_INFO
+
+ 117           LOAD_GLOBAL              6 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       22 (to L8)
+               STORE_FAST               5 (e)
+
+ 118   L5:     LOAD_GLOBAL              9 (print + NULL)
+               LOAD_CONST              14 ('Location error:')
+               LOAD_FAST                5 (e)
+               CALL                     2
+               POP_TOP
+
+ 119   L6:     POP_EXCEPT
+               LOAD_CONST              15 (None)
+               STORE_FAST               5 (e)
+               DELETE_FAST              5 (e)
+               RETURN_CONST            13 ('Unknown Location')
+
+  --   L7:     LOAD_CONST              15 (None)
+               STORE_FAST               5 (e)
+               DELETE_FAST              5 (e)
+               RERAISE                  1
+
+ 117   L8:     RERAISE                  0
+
+  --   L9:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L4 [0]
+  L4 to L5 -> L9 [1] lasti
+  L5 to L6 -> L7 [1] lasti
+  L7 to L9 -> L9 [1] lasti
+
+Disassembly of <code object show_message at 0x7f15fafea970, file "utils.py", line 121>:
+121           RESUME                   0
+
+123           LOAD_CONST               1 (262144)
+              STORE_FAST               4 (MB_TOPMOST)
+
+124           LOAD_CONST               2 (65536)
+              STORE_FAST               5 (MB_SETFOREGROUND)
+
+125           LOAD_GLOBAL              0 (ctypes)
+              LOAD_ATTR                2 (windll)
+              LOAD_ATTR                4 (user32)
+              LOAD_ATTR                7 (MessageBoxTimeoutW + NULL|self)
+
+126           LOAD_CONST               3 (0)
+              LOAD_FAST_LOAD_FAST     16 (text, title)
+              LOAD_FAST_LOAD_FAST     36 (style, MB_TOPMOST)
+              BINARY_OP                7 (|)
+              LOAD_FAST                5 (MB_SETFOREGROUND)
+              BINARY_OP                7 (|)
+              LOAD_CONST               3 (0)
+              LOAD_FAST                3 (timeout)
+              LOAD_CONST               4 (1000)
+              BINARY_OP                5 (*)
+
+125           CALL                     6
+              POP_TOP
+              RETURN_CONST             5 (None)
+
+Disassembly of <code object force_shutdown at 0x7f15fb197c90, file "utils.py", line 129>:
+ 129           RESUME                   0
+
+ 131           NOP
+
+ 132   L1:     LOAD_GLOBAL              0 (time)
+               LOAD_ATTR                2 (sleep)
+               PUSH_NULL
+               LOAD_CONST               1 (10)
+               CALL                     1
+               POP_TOP
+
+ 133           LOAD_GLOBAL              4 (os)
+               LOAD_ATTR                6 (_exit)
+               PUSH_NULL
+               LOAD_CONST               2 (0)
+               CALL                     1
+               POP_TOP
+       L2:     RETURN_CONST             4 (None)
+
+  --   L3:     PUSH_EXC_INFO
+
+ 134           LOAD_GLOBAL              8 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       24 (to L7)
+               STORE_FAST               0 (e)
+
+ 135   L4:     LOAD_GLOBAL             11 (print + NULL)
+               LOAD_CONST               3 ('Shutdown error: ')
+               LOAD_FAST                0 (e)
+               FORMAT_SIMPLE
+               BUILD_STRING             2
+               CALL                     1
+               POP_TOP
+       L5:     POP_EXCEPT
+               LOAD_CONST               4 (None)
+               STORE_FAST               0 (e)
+               DELETE_FAST              0 (e)
+               RETURN_CONST             4 (None)
+
+  --   L6:     LOAD_CONST               4 (None)
+               STORE_FAST               0 (e)
+               DELETE_FAST              0 (e)
+               RERAISE                  1
+
+ 134   L7:     RERAISE                  0
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [0]
+  L3 to L4 -> L8 [1] lasti
+  L4 to L5 -> L6 [1] lasti
+  L6 to L8 -> L8 [1] lasti
+
+Disassembly of <code object notice_and_shutdown at 0x7f15fb166eb0, file "utils.py", line 137>:
+137           RESUME                   0
+
+139           LOAD_GLOBAL              0 (threading)
+              LOAD_ATTR                2 (Thread)
+              PUSH_NULL
+              LOAD_GLOBAL              4 (force_shutdown)
+              LOAD_CONST               1 (True)
+              LOAD_CONST               2 (('target', 'daemon'))
+              CALL_KW                  2
+              LOAD_ATTR                7 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+
+140           LOAD_GLOBAL              0 (threading)
+              LOAD_ATTR                2 (Thread)
+              PUSH_NULL
+              LOAD_GLOBAL              9 (show_message + NULL)
+              LOAD_FAST_LOAD_FAST      1 (title, text)
+              LOAD_CONST               3 (16)
+              CALL                     3
+              LOAD_CONST               1 (True)
+              LOAD_CONST               2 (('target', 'daemon'))
+              CALL_KW                  2
+              LOAD_ATTR                7 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             4 (None)
+
+Disassembly of <code object get_current_time at 0x559f5c20fc10, file "utils.py", line 143>:
+ 143           RESUME                   0
+
+ 144           NOP
+
+ 145   L1:     LOAD_GLOBAL              0 (requests)
+               LOAD_ATTR                2 (get)
+               PUSH_NULL
+               LOAD_CONST               1 ('https://timeapi.io/api/Time/current/zone?timeZone=Asia/Ho_Chi_Minh')
+               LOAD_CONST               2 (5)
+               LOAD_CONST               3 (('timeout',))
+               CALL_KW                  2
+               STORE_FAST               0 (response)
+
+ 146           LOAD_FAST                0 (response)
+               LOAD_ATTR                4 (status_code)
+               LOAD_CONST               4 (200)
+               COMPARE_OP              88 (bool(==))
+               POP_JUMP_IF_FALSE       72 (to L3)
+
+ 147           LOAD_FAST                0 (response)
+               LOAD_ATTR                7 (json + NULL|self)
+               CALL                     0
+               STORE_FAST               1 (data)
+
+ 148           LOAD_GLOBAL              8 (datetime)
+               LOAD_ATTR               10 (strptime)
+               PUSH_NULL
+               LOAD_FAST                1 (data)
+               LOAD_CONST               5 ('year')
+               BINARY_SUBSCR
+               FORMAT_SIMPLE
+               LOAD_CONST               6 ('-')
+               LOAD_FAST                1 (data)
+               LOAD_CONST               7 ('month')
+               BINARY_SUBSCR
+               LOAD_CONST               8 ('02d')
+               FORMAT_WITH_SPEC
+               LOAD_CONST               6 ('-')
+               LOAD_FAST                1 (data)
+               LOAD_CONST               9 ('day')
+               BINARY_SUBSCR
+               LOAD_CONST               8 ('02d')
+               FORMAT_WITH_SPEC
+               LOAD_CONST              10 (' ')
+               LOAD_FAST                1 (data)
+               LOAD_CONST              11 ('hour')
+               BINARY_SUBSCR
+               LOAD_CONST               8 ('02d')
+               FORMAT_WITH_SPEC
+               LOAD_CONST              12 (':')
+               LOAD_FAST                1 (data)
+               LOAD_CONST              13 ('minute')
+               BINARY_SUBSCR
+               LOAD_CONST               8 ('02d')
+               FORMAT_WITH_SPEC
+               BUILD_STRING             9
+               LOAD_CONST              14 ('%Y-%m-%d %H:%M')
+               CALL                     2
+       L2:     RETURN_VALUE
+
+ 150   L3:     LOAD_GLOBAL              8 (datetime)
+               LOAD_ATTR               12 (now)
+               PUSH_NULL
+               CALL                     0
+       L4:     RETURN_VALUE
+
+  --   L5:     PUSH_EXC_INFO
+
+ 151           LOAD_GLOBAL             14 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       24 (to L7)
+               POP_TOP
+
+ 152           LOAD_GLOBAL              8 (datetime)
+               LOAD_ATTR               12 (now)
+               PUSH_NULL
+               CALL                     0
+               SWAP                     2
+       L6:     POP_EXCEPT
+               RETURN_VALUE
+
+ 151   L7:     RERAISE                  0
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L5 [0]
+  L3 to L4 -> L5 [0]
+  L5 to L6 -> L8 [1] lasti
+  L7 to L8 -> L8 [1] lasti
+

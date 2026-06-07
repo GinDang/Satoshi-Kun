@@ -1,0 +1,145 @@
+# Full disassembly of module: custom_widgets
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, ('QPushButton',), ('QColor', 'QCursor'), ('Qt',), 'ModernButton', None]
+# names: ['PySide6.QtWidgets', 'QPushButton', 'PySide6.QtGui', 'QColor', 'QCursor', 'PySide6.QtCore', 'Qt', 'ModernButton']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (('QPushButton',))
+              IMPORT_NAME              0 (PySide6.QtWidgets)
+              IMPORT_FROM              1 (QPushButton)
+              STORE_NAME               1 (QPushButton)
+              POP_TOP
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('QColor', 'QCursor'))
+              IMPORT_NAME              2 (PySide6.QtGui)
+              IMPORT_FROM              3 (QColor)
+              STORE_NAME               3 (QColor)
+              IMPORT_FROM              4 (QCursor)
+              STORE_NAME               4 (QCursor)
+              POP_TOP
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('Qt',))
+              IMPORT_NAME              5 (PySide6.QtCore)
+              IMPORT_FROM              6 (Qt)
+              STORE_NAME               6 (Qt)
+              POP_TOP
+
+  5           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               4 (<code object ModernButton at 0x7f15fb037d30, file "custom_widgets.py", line 5>)
+              MAKE_FUNCTION
+              LOAD_CONST               5 ('ModernButton')
+              LOAD_NAME                1 (QPushButton)
+              CALL                     3
+              STORE_NAME               7 (ModernButton)
+              RETURN_CONST             6 (None)
+
+Disassembly of <code object ModernButton at 0x7f15fb037d30, file "custom_widgets.py", line 5>:
+  --           MAKE_CELL                0 (__class__)
+
+   5           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('ModernButton')
+               STORE_NAME               2 (__qualname__)
+               LOAD_CONST               1 (5)
+               STORE_NAME               3 (__firstlineno__)
+
+   6           LOAD_FAST                0 (__class__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __init__ at 0x7f15fb009de0, file "custom_widgets.py", line 6>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_NAME               4 (__init__)
+
+  27           LOAD_CONST               3 (<code object lighten_color at 0x7f15fb11e3f0, file "custom_widgets.py", line 27>)
+               MAKE_FUNCTION
+               STORE_NAME               5 (lighten_color)
+               LOAD_CONST               4 (())
+               STORE_NAME               6 (__static_attributes__)
+               LOAD_FAST                0 (__class__)
+               COPY                     1
+               STORE_NAME               7 (__classcell__)
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x7f15fb009de0, file "custom_widgets.py", line 6>:
+  --           COPY_FREE_VARS           1
+
+   6           RESUME                   0
+
+   7           LOAD_GLOBAL              0 (super)
+               LOAD_DEREF               3 (__class__)
+               LOAD_FAST                0 (self)
+               LOAD_SUPER_ATTR          5 (__init__ + NULL|self)
+               LOAD_FAST                1 (text)
+               CALL                     1
+               POP_TOP
+
+   8           LOAD_FAST                0 (self)
+               LOAD_ATTR                5 (setStyleSheet + NULL|self)
+               LOAD_CONST               1 ('\n            QPushButton {\n                background-color: ')
+
+  10           LOAD_FAST                2 (color)
+               FORMAT_SIMPLE
+               LOAD_CONST               2 (';\n                color: white;\n                border-radius: 10px;\n                padding: 10px;\n                font-size: 16px;\n                border: none;\n                outline: none;\n            }\n            QPushButton:hover {\n                background-color: ')
+
+  19           LOAD_FAST                0 (self)
+               LOAD_ATTR                7 (lighten_color + NULL|self)
+               LOAD_FAST                2 (color)
+               LOAD_CONST               3 (20)
+               CALL                     2
+               FORMAT_SIMPLE
+               LOAD_CONST               4 (';\n                cursor: pointinghand; /* Hiển thị hình bàn tay */\n            }\n        ')
+
+   8           BUILD_STRING             5
+               CALL                     1
+               POP_TOP
+
+  24           LOAD_FAST                0 (self)
+               LOAD_ATTR                9 (setCursor + NULL|self)
+               LOAD_GLOBAL             11 (QCursor + NULL)
+               LOAD_GLOBAL             12 (Qt)
+               LOAD_ATTR               14 (PointingHandCursor)
+               CALL                     1
+               CALL                     1
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object lighten_color at 0x7f15fb11e3f0, file "custom_widgets.py", line 27>:
+ 27           RESUME                   0
+
+ 29           LOAD_GLOBAL              1 (QColor + NULL)
+              LOAD_FAST                1 (color)
+              CALL                     1
+              STORE_FAST               1 (color)
+
+ 30           LOAD_FAST                1 (color)
+              LOAD_ATTR                3 (setHsv + NULL|self)
+              LOAD_FAST                1 (color)
+              LOAD_ATTR                5 (hue + NULL|self)
+              CALL                     0
+              LOAD_FAST                1 (color)
+              LOAD_ATTR                7 (saturation + NULL|self)
+              CALL                     0
+              LOAD_GLOBAL              9 (min + NULL)
+              LOAD_CONST               1 (255)
+              LOAD_FAST                1 (color)
+              LOAD_ATTR               11 (value + NULL|self)
+              CALL                     0
+              LOAD_FAST                2 (percent)
+              BINARY_OP                0 (+)
+              CALL                     2
+              CALL                     3
+              POP_TOP
+
+ 31           LOAD_FAST                1 (color)
+              LOAD_ATTR               13 (name + NULL|self)
+              CALL                     0
+              RETURN_VALUE
+

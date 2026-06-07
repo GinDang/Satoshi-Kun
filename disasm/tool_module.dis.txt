@@ -1,0 +1,1058 @@
+# Full disassembly of module: tool_module
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, None, ('Controller', 'Key'), ('show_message', 'resource_path'), ('QObject', 'Signal'), ('press_key',), 'Communicator', 'ToolBot']
+# names: ['cv2', 'numpy', 'np', 'pyautogui', 'os', 'time', 'threading', 'mss', 'pytesseract', 'pynput.keyboard', 'Controller', 'Key', 'keyboard', 'utils', 'show_message', 'resource_path', 'PySide6.QtCore', 'QObject', 'Signal', 'random', 'press_key', 'Communicator', 'comm', 'ToolBot']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              0 (cv2)
+              STORE_NAME               0 (cv2)
+
+  2           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              1 (numpy)
+              STORE_NAME               2 (np)
+
+  3           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              3 (pyautogui)
+              STORE_NAME               3 (pyautogui)
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              4 (os)
+              STORE_NAME               4 (os)
+
+  5           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              5 (time)
+              STORE_NAME               5 (time)
+
+  6           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              6 (threading)
+              STORE_NAME               6 (threading)
+
+  7           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              7 (mss)
+              STORE_NAME               7 (mss)
+
+  8           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME              8 (pytesseract)
+              STORE_NAME               8 (pytesseract)
+
+  9           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('Controller', 'Key'))
+              IMPORT_NAME              9 (pynput.keyboard)
+              IMPORT_FROM             10 (Controller)
+              STORE_NAME              10 (Controller)
+              IMPORT_FROM             11 (Key)
+              STORE_NAME              11 (Key)
+              POP_TOP
+
+ 10           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME             12 (keyboard)
+              STORE_NAME              12 (keyboard)
+
+ 11           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('show_message', 'resource_path'))
+              IMPORT_NAME             13 (utils)
+              IMPORT_FROM             14 (show_message)
+              STORE_NAME              14 (show_message)
+              IMPORT_FROM             15 (resource_path)
+              STORE_NAME              15 (resource_path)
+              POP_TOP
+
+ 12           LOAD_CONST               0 (0)
+              LOAD_CONST               4 (('QObject', 'Signal'))
+              IMPORT_NAME             16 (PySide6.QtCore)
+              IMPORT_FROM             17 (QObject)
+              STORE_NAME              17 (QObject)
+              IMPORT_FROM             18 (Signal)
+              STORE_NAME              18 (Signal)
+              POP_TOP
+
+ 14           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (None)
+              IMPORT_NAME             19 (random)
+              STORE_NAME              19 (random)
+
+ 16           LOAD_CONST               0 (0)
+              LOAD_CONST               5 (('press_key',))
+              IMPORT_NAME             20 (press_key)
+              IMPORT_FROM             20 (press_key)
+              STORE_NAME              20 (press_key)
+              POP_TOP
+
+ 19           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               6 (<code object Communicator at 0x7f15fafcdc50, file "tool_module.py", line 19>)
+              MAKE_FUNCTION
+              LOAD_CONST               7 ('Communicator')
+              LOAD_NAME               17 (QObject)
+              CALL                     3
+              STORE_NAME              21 (Communicator)
+
+ 22           LOAD_NAME               21 (Communicator)
+              PUSH_NULL
+              CALL                     0
+              STORE_NAME              22 (comm)
+
+ 24           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               8 (<code object ToolBot at 0x7f15fafea6f0, file "tool_module.py", line 24>)
+              MAKE_FUNCTION
+              LOAD_CONST               9 ('ToolBot')
+              CALL                     2
+              STORE_NAME              23 (ToolBot)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object Communicator at 0x7f15fafcdc50, file "tool_module.py", line 19>:
+ 19           RESUME                   0
+              LOAD_NAME                0 (__name__)
+              STORE_NAME               1 (__module__)
+              LOAD_CONST               0 ('Communicator')
+              STORE_NAME               2 (__qualname__)
+              LOAD_CONST               1 (19)
+              STORE_NAME               3 (__firstlineno__)
+
+ 20           LOAD_NAME                4 (Signal)
+              PUSH_NULL
+              CALL                     0
+              STORE_NAME               5 (update_signal)
+              LOAD_CONST               2 (())
+              STORE_NAME               6 (__static_attributes__)
+              RETURN_CONST             3 (None)
+
+Disassembly of <code object ToolBot at 0x7f15fafea6f0, file "tool_module.py", line 24>:
+ 24           RESUME                   0
+              LOAD_NAME                0 (__name__)
+              STORE_NAME               1 (__module__)
+              LOAD_CONST               0 ('ToolBot')
+              STORE_NAME               2 (__qualname__)
+              LOAD_CONST               1 (24)
+              STORE_NAME               3 (__firstlineno__)
+
+ 25           LOAD_CONST               2 (<code object __init__ at 0x7f15fb0505b0, file "tool_module.py", line 25>)
+              MAKE_FUNCTION
+              STORE_NAME               4 (__init__)
+
+ 36           LOAD_CONST              16 ((1,))
+              LOAD_CONST               3 (<code object capture_screen at 0x559f5c1f3540, file "tool_module.py", line 36>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME               5 (capture_screen)
+
+ 61           LOAD_CONST              17 ((1, 250, 70))
+              LOAD_CONST               4 (<code object capture_screen_for_cut at 0x559f5c205cc0, file "tool_module.py", line 61>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME               6 (capture_screen_for_cut)
+
+ 90           LOAD_CONST               5 (<code object extract_char at 0x559f5c20d4b0, file "tool_module.py", line 90>)
+              MAKE_FUNCTION
+              STORE_NAME               7 (extract_char)
+
+111           LOAD_CONST               6 (<code object hold_shift_w at 0x7f15fb041530, file "tool_module.py", line 111>)
+              MAKE_FUNCTION
+              STORE_NAME               8 (hold_shift_w)
+
+117           LOAD_CONST               7 (<code object release_shift_w at 0x7f15fb0417d0, file "tool_module.py", line 117>)
+              MAKE_FUNCTION
+              STORE_NAME               9 (release_shift_w)
+
+123           LOAD_CONST               8 (<code object type_detected_char at 0x7f15fb197560, file "tool_module.py", line 123>)
+              MAKE_FUNCTION
+              STORE_NAME              10 (type_detected_char)
+
+137           LOAD_CONST               9 (<code object start_tool at 0x559f5c20f6f0, file "tool_module.py", line 137>)
+              MAKE_FUNCTION
+              STORE_NAME              11 (start_tool)
+
+196           LOAD_CONST              10 (<code object stop_tool at 0x7f15fb1976d0, file "tool_module.py", line 196>)
+              MAKE_FUNCTION
+              STORE_NAME              12 (stop_tool)
+
+206           LOAD_CONST              11 (<code object start_tool_thread at 0x7f15fb00b550, file "tool_module.py", line 206>)
+              MAKE_FUNCTION
+              STORE_NAME              13 (start_tool_thread)
+
+229           LOAD_CONST              12 (None)
+              STORE_NAME              14 (main_page_instance)
+
+231           LOAD_CONST              12 (None)
+              STORE_NAME              15 (comm)
+
+233           LOAD_CONST              13 (<code object stop_all_threads at 0x559f5c15ee00, file "tool_module.py", line 233>)
+              MAKE_FUNCTION
+              STORE_NAME              16 (stop_all_threads)
+
+256           LOAD_CONST              14 (<code object cleanup at 0x7f15fb1923a0, file "tool_module.py", line 256>)
+              MAKE_FUNCTION
+              STORE_NAME              17 (cleanup)
+              LOAD_CONST              15 (('is_running', 'keyboard', 'threads'))
+              STORE_NAME              18 (__static_attributes__)
+              RETURN_CONST            12 (None)
+
+Disassembly of <code object __init__ at 0x7f15fb0505b0, file "tool_module.py", line 25>:
+ 25           RESUME                   0
+
+ 27           LOAD_CONST               1 (False)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (is_running)
+
+ 28           LOAD_GLOBAL              3 (Controller + NULL)
+              CALL                     0
+              LOAD_FAST                0 (self)
+              STORE_ATTR               2 (keyboard)
+
+ 29           LOAD_GLOBAL              7 (resource_path + NULL)
+              LOAD_CONST               2 ('Tesseract-OCR/tesseract.exe')
+              CALL                     1
+              LOAD_GLOBAL              8 (pytesseract)
+              LOAD_ATTR                8 (pytesseract)
+              STORE_ATTR               5 (tesseract_cmd)
+
+ 31           BUILD_LIST               0
+              LOAD_FAST                0 (self)
+              STORE_ATTR               6 (threads)
+
+ 33           LOAD_CONST               1 (False)
+              LOAD_GLOBAL             14 (pyautogui)
+              STORE_ATTR               8 (FAILSAFE)
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object capture_screen at 0x559f5c1f3540, file "tool_module.py", line 36>:
+  36           RESUME                   0
+
+  38           LOAD_GLOBAL              0 (mss)
+               LOAD_ATTR                0 (mss)
+               PUSH_NULL
+               CALL                     0
+               BEFORE_WITH
+       L1:     STORE_FAST               3 (sct)
+
+  39           LOAD_FAST                3 (sct)
+               LOAD_ATTR                2 (monitors)
+               LOAD_FAST                2 (screen_id)
+               BINARY_SUBSCR
+               STORE_FAST               4 (monitor)
+
+  40           LOAD_FAST                4 (monitor)
+               LOAD_CONST               1 ('left')
+               BINARY_SUBSCR
+               LOAD_FAST                4 (monitor)
+               LOAD_CONST               2 ('width')
+               BINARY_SUBSCR
+               LOAD_CONST               3 (2)
+               BINARY_OP                2 (//)
+               BINARY_OP                0 (+)
+               STORE_FAST               5 (center_x)
+
+  41           LOAD_FAST                4 (monitor)
+               LOAD_CONST               4 ('top')
+               BINARY_SUBSCR
+               LOAD_FAST                4 (monitor)
+               LOAD_CONST               5 ('height')
+               BINARY_SUBSCR
+               LOAD_CONST               3 (2)
+               BINARY_OP                2 (//)
+               BINARY_OP                0 (+)
+               STORE_FAST               6 (center_y)
+
+  44           LOAD_FAST                6 (center_y)
+               LOAD_CONST               6 (10)
+               BINARY_OP                0 (+)
+
+  45           LOAD_FAST_LOAD_FAST     81 (center_x, size)
+               LOAD_CONST               3 (2)
+               BINARY_OP                2 (//)
+               BINARY_OP               10 (-)
+
+  46           LOAD_FAST                1 (size)
+
+  47           LOAD_FAST                1 (size)
+
+  43           LOAD_CONST               7 (('top', 'left', 'width', 'height'))
+               BUILD_CONST_KEY_MAP      4
+               STORE_FAST               7 (region)
+
+  49           LOAD_GLOBAL              4 (np)
+               LOAD_ATTR                6 (array)
+               PUSH_NULL
+               LOAD_FAST                3 (sct)
+               LOAD_ATTR                9 (grab + NULL|self)
+               LOAD_FAST                7 (region)
+               CALL                     1
+               CALL                     1
+               STORE_FAST               8 (screenshot)
+
+  51           LOAD_GLOBAL             10 (cv2)
+               LOAD_ATTR               12 (cvtColor)
+               PUSH_NULL
+               LOAD_FAST                8 (screenshot)
+               LOAD_GLOBAL             10 (cv2)
+               LOAD_ATTR               14 (COLOR_BGR2GRAY)
+               CALL                     2
+               STORE_FAST               9 (gray)
+
+  54           LOAD_GLOBAL             10 (cv2)
+               LOAD_ATTR               16 (threshold)
+               PUSH_NULL
+               LOAD_FAST                9 (gray)
+               LOAD_CONST               8 (0)
+               LOAD_CONST               9 (255)
+               LOAD_GLOBAL             10 (cv2)
+               LOAD_ATTR               18 (THRESH_BINARY_INV)
+               LOAD_GLOBAL             10 (cv2)
+               LOAD_ATTR               20 (THRESH_OTSU)
+               BINARY_OP                0 (+)
+               CALL                     4
+               LOAD_CONST              10 (1)
+               BINARY_SUBSCR
+               STORE_FAST              10 (thresh)
+
+  38   L2:     LOAD_CONST               0 (None)
+               LOAD_CONST               0 (None)
+               LOAD_CONST               0 (None)
+               CALL                     2
+               POP_TOP
+
+  59           LOAD_FAST               10 (thresh)
+               RETURN_VALUE
+
+  38   L3:     PUSH_EXC_INFO
+               WITH_EXCEPT_START
+               TO_BOOL
+               POP_JUMP_IF_TRUE         1 (to L4)
+               RERAISE                  2
+       L4:     POP_TOP
+       L5:     POP_EXCEPT
+               POP_TOP
+               POP_TOP
+
+  59           LOAD_FAST_CHECK         10 (thresh)
+               RETURN_VALUE
+
+  --   L6:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [1] lasti
+  L3 to L5 -> L6 [3] lasti
+
+Disassembly of <code object capture_screen_for_cut at 0x559f5c205cc0, file "tool_module.py", line 61>:
+  61           RESUME                   0
+
+  67           LOAD_GLOBAL              0 (mss)
+               LOAD_ATTR                0 (mss)
+               PUSH_NULL
+               CALL                     0
+               BEFORE_WITH
+       L1:     STORE_FAST               4 (sct)
+
+  68           LOAD_FAST                4 (sct)
+               LOAD_ATTR                2 (monitors)
+               STORE_FAST               5 (monitors)
+
+  69           LOAD_FAST                1 (screen_id)
+               LOAD_GLOBAL              5 (len + NULL)
+               LOAD_FAST                5 (monitors)
+               CALL                     1
+               COMPARE_OP             188 (bool(>=))
+               POP_JUMP_IF_FALSE       17 (to L2)
+
+  70           LOAD_GLOBAL              7 (print + NULL)
+               LOAD_CONST               1 ('⚠ Không tìm thấy màn hình ')
+               LOAD_FAST                1 (screen_id)
+               FORMAT_SIMPLE
+               LOAD_CONST               2 (', mặc định về màn hình chính.')
+               BUILD_STRING             3
+               CALL                     1
+               POP_TOP
+
+  71           LOAD_CONST               3 (0)
+               STORE_FAST               1 (screen_id)
+
+  73   L2:     LOAD_FAST_LOAD_FAST     81 (monitors, screen_id)
+               BINARY_SUBSCR
+               STORE_FAST               6 (screen)
+
+  76           LOAD_FAST                6 (screen)
+               LOAD_CONST               4 ('left')
+               BINARY_SUBSCR
+               LOAD_CONST               5 (10)
+               BINARY_OP                0 (+)
+               STORE_FAST               7 (left)
+
+  77           LOAD_FAST                6 (screen)
+               LOAD_CONST               6 ('top')
+               BINARY_SUBSCR
+               LOAD_CONST               5 (10)
+               BINARY_OP                0 (+)
+               STORE_FAST               8 (top)
+
+  80           LOAD_FAST                4 (sct)
+               LOAD_ATTR                9 (grab + NULL|self)
+               LOAD_FAST_LOAD_FAST    120 (left, top)
+               LOAD_FAST_LOAD_FAST     35 (region_width, region_height)
+               LOAD_CONST               7 (('left', 'top', 'width', 'height'))
+               BUILD_CONST_KEY_MAP      4
+               CALL                     1
+               STORE_FAST               9 (screenshot)
+
+  81           LOAD_GLOBAL             10 (np)
+               LOAD_ATTR               12 (array)
+               PUSH_NULL
+               LOAD_FAST                9 (screenshot)
+               CALL                     1
+               LOAD_CONST               8 (None)
+               LOAD_CONST               8 (None)
+               BUILD_SLICE              2
+               LOAD_CONST               8 (None)
+               LOAD_CONST               8 (None)
+               BUILD_SLICE              2
+               LOAD_CONST               8 (None)
+               LOAD_CONST               9 (3)
+               BUILD_SLICE              2
+               BUILD_TUPLE              3
+               BINARY_SUBSCR
+               STORE_FAST              10 (img)
+
+  87           LOAD_FAST               10 (img)
+
+  67   L3:     SWAP                     2
+               LOAD_CONST               8 (None)
+               LOAD_CONST               8 (None)
+               LOAD_CONST               8 (None)
+               CALL                     2
+               POP_TOP
+               RETURN_VALUE
+       L4:     PUSH_EXC_INFO
+               WITH_EXCEPT_START
+               TO_BOOL
+               POP_JUMP_IF_TRUE         1 (to L5)
+               RERAISE                  2
+       L5:     POP_TOP
+       L6:     POP_EXCEPT
+               POP_TOP
+               POP_TOP
+               RETURN_CONST             8 (None)
+
+  --   L7:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L3 -> L4 [1] lasti
+  L4 to L6 -> L7 [3] lasti
+
+Disassembly of <code object extract_char at 0x559f5c20d4b0, file "tool_module.py", line 90>:
+ 90           RESUME                   0
+
+ 94           LOAD_CONST               1 ('--oem 3 --psm 7 -c tessedit_char_whitelist=EFY')
+              STORE_FAST               2 (custom_config)
+
+ 97           LOAD_GLOBAL              0 (pytesseract)
+              LOAD_ATTR                2 (image_to_data)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     18 (image, custom_config)
+              LOAD_GLOBAL              0 (pytesseract)
+              LOAD_ATTR                4 (Output)
+              LOAD_ATTR                6 (DICT)
+              LOAD_CONST               2 (('config', 'output_type'))
+              CALL_KW                  3
+              STORE_FAST               3 (details)
+
+ 99           LOAD_CONST               3 ((-1, None))
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST   69 (max_confidence, char)
+
+100           LOAD_GLOBAL              9 (range + NULL)
+              LOAD_GLOBAL             11 (len + NULL)
+              LOAD_FAST                3 (details)
+              LOAD_CONST               4 ('text')
+              BINARY_SUBSCR
+              CALL                     1
+              CALL                     1
+              GET_ITER
+      L1:     FOR_ITER                99 (to L6)
+              STORE_FAST               6 (i)
+
+101           LOAD_FAST                3 (details)
+              LOAD_CONST               4 ('text')
+              BINARY_SUBSCR
+              LOAD_FAST                6 (i)
+              BINARY_SUBSCR
+              LOAD_ATTR               13 (strip + NULL|self)
+              CALL                     0
+              STORE_FAST               7 (word)
+
+102           LOAD_GLOBAL             15 (int + NULL)
+              LOAD_FAST                3 (details)
+              LOAD_CONST               5 ('conf')
+              BINARY_SUBSCR
+              LOAD_FAST                6 (i)
+              BINARY_SUBSCR
+              CALL                     1
+              STORE_FAST               8 (confidence)
+
+104           LOAD_FAST                7 (word)
+              LOAD_ATTR               17 (isalpha + NULL|self)
+              CALL                     0
+              TO_BOOL
+              POP_JUMP_IF_TRUE         2 (to L2)
+              JUMP_BACKWARD           65 (to L1)
+      L2:     LOAD_GLOBAL             11 (len + NULL)
+              LOAD_FAST                7 (word)
+              CALL                     1
+              LOAD_CONST               6 (1)
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_TRUE         2 (to L3)
+              JUMP_BACKWARD           82 (to L1)
+      L3:     LOAD_FAST                8 (confidence)
+              LOAD_CONST               7 (50)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_TRUE         2 (to L4)
+              JUMP_BACKWARD           90 (to L1)
+
+105   L4:     LOAD_FAST_LOAD_FAST    132 (confidence, max_confidence)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_TRUE         2 (to L5)
+              JUMP_BACKWARD           97 (to L1)
+
+106   L5:     LOAD_FAST_LOAD_FAST    135 (confidence, word)
+              STORE_FAST_STORE_FAST   84 (char, max_confidence)
+              JUMP_BACKWARD          101 (to L1)
+
+100   L6:     END_FOR
+              POP_TOP
+
+107           LOAD_FAST                5 (char)
+              RETURN_VALUE
+
+Disassembly of <code object hold_shift_w at 0x7f15fb041530, file "tool_module.py", line 111>:
+111           RESUME                   0
+
+114           LOAD_GLOBAL              0 (keyboard)
+              LOAD_ATTR                2 (press)
+              PUSH_NULL
+              LOAD_CONST               1 ('w')
+              CALL                     1
+              POP_TOP
+
+115           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (keyboard)
+              LOAD_ATTR                3 (press + NULL|self)
+              LOAD_GLOBAL              4 (Key)
+              LOAD_ATTR                6 (shift)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+Disassembly of <code object release_shift_w at 0x7f15fb0417d0, file "tool_module.py", line 117>:
+117           RESUME                   0
+
+119           LOAD_GLOBAL              0 (keyboard)
+              LOAD_ATTR                2 (release)
+              PUSH_NULL
+              LOAD_CONST               1 ('w')
+              CALL                     1
+              POP_TOP
+
+120           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (keyboard)
+              LOAD_ATTR                3 (release + NULL|self)
+              LOAD_GLOBAL              4 (Key)
+              LOAD_ATTR                6 (space)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+Disassembly of <code object type_detected_char at 0x7f15fb197560, file "tool_module.py", line 123>:
+123           RESUME                   0
+
+125           LOAD_FAST                1 (char)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       69 (to L3)
+
+127           LOAD_FAST                1 (char)
+              LOAD_ATTR                1 (lower + NULL|self)
+              CALL                     0
+              STORE_FAST               2 (lowercase_char)
+
+129           LOAD_GLOBAL              2 (random)
+              LOAD_ATTR                4 (randint)
+              PUSH_NULL
+              LOAD_CONST               1 (5)
+              LOAD_CONST               2 (10)
+              CALL                     2
+              STORE_FAST               3 (amount_type)
+
+132           LOAD_GLOBAL              7 (range + NULL)
+              LOAD_FAST                3 (amount_type)
+              CALL                     1
+              GET_ITER
+      L1:     FOR_ITER                14 (to L2)
+              STORE_FAST               4 (_)
+
+134           LOAD_GLOBAL              9 (press_key + NULL)
+              LOAD_FAST                2 (lowercase_char)
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           16 (to L1)
+
+132   L2:     END_FOR
+              POP_TOP
+              RETURN_CONST             3 (None)
+
+125   L3:     RETURN_CONST             3 (None)
+
+Disassembly of <code object start_tool at 0x559f5c20f6f0, file "tool_module.py", line 137>:
+137           RESUME                   0
+
+139           LOAD_CONST               1 (True)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (is_running)
+
+140           LOAD_GLOBAL              3 (print + NULL)
+              LOAD_CONST               2 ('Tool Starting.')
+              CALL                     1
+              POP_TOP
+
+141           LOAD_CONST               3 (False)
+              STORE_FAST               1 (moving)
+
+142           LOAD_GLOBAL              4 (cv2)
+              LOAD_ATTR                6 (imread)
+              PUSH_NULL
+              LOAD_GLOBAL              9 (resource_path + NULL)
+              LOAD_CONST               4 ('templates/chatcay.png')
+              CALL                     1
+              CALL                     1
+              STORE_FAST               2 (cut_template)
+
+145           LOAD_GLOBAL             10 (keyboard)
+              LOAD_ATTR               12 (press)
+              PUSH_NULL
+              LOAD_CONST               5 ('w')
+              CALL                     1
+              POP_TOP
+
+146           LOAD_GLOBAL             14 (time)
+              LOAD_ATTR               16 (sleep)
+              PUSH_NULL
+              LOAD_CONST               6 (0.2)
+              CALL                     1
+              POP_TOP
+
+147           LOAD_FAST                0 (self)
+              LOAD_ATTR               10 (keyboard)
+              LOAD_ATTR               13 (press + NULL|self)
+              LOAD_GLOBAL             18 (Key)
+              LOAD_ATTR               20 (shift)
+              CALL                     1
+              POP_TOP
+
+149           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (is_running)
+              TO_BOOL
+              EXTENDED_ARG             1
+              POP_JUMP_IF_FALSE      394 (to L9)
+
+151   L1:     LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (is_running)
+              TO_BOOL
+              POP_JUMP_IF_TRUE         1 (to L2)
+
+152           RETURN_CONST             9 (None)
+
+154   L2:     LOAD_FAST                0 (self)
+              LOAD_ATTR               23 (capture_screen + NULL|self)
+              LOAD_CONST               7 (40)
+              CALL                     1
+              STORE_FAST               3 (screenshot)
+
+156           LOAD_FAST                0 (self)
+              LOAD_ATTR               25 (capture_screen_for_cut + NULL|self)
+              CALL                     0
+              STORE_FAST               4 (screenshot_for_E)
+
+157           LOAD_GLOBAL              4 (cv2)
+              LOAD_ATTR               26 (matchTemplate)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     66 (screenshot_for_E, cut_template)
+              LOAD_GLOBAL              4 (cv2)
+              LOAD_ATTR               28 (TM_CCOEFF_NORMED)
+              CALL                     3
+              STORE_FAST               5 (result)
+
+158           LOAD_CONST               8 (0.8)
+              STORE_FAST               6 (threshold)
+
+159           LOAD_GLOBAL              4 (cv2)
+              LOAD_ATTR               30 (minMaxLoc)
+              PUSH_NULL
+              LOAD_FAST                5 (result)
+              CALL                     1
+              UNPACK_SEQUENCE          4
+              STORE_FAST_STORE_FAST  120 (min_val, max_val)
+              STORE_FAST_STORE_FAST  154 (min_loc, max_loc)
+
+163           LOAD_FAST                3 (screenshot)
+              POP_JUMP_IF_NONE       233 (to L7)
+
+164           LOAD_FAST                0 (self)
+              LOAD_ATTR               33 (extract_char + NULL|self)
+              LOAD_FAST                3 (screenshot)
+              CALL                     1
+              STORE_FAST              11 (detected_char)
+
+166           LOAD_FAST_LOAD_FAST    134 (max_val, threshold)
+              COMPARE_OP             188 (bool(>=))
+              POP_JUMP_IF_FALSE      136 (to L4)
+
+167           LOAD_FAST                1 (moving)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       18 (to L3)
+
+168           LOAD_FAST                0 (self)
+              LOAD_ATTR               35 (release_shift_w + NULL|self)
+              CALL                     0
+              POP_TOP
+
+169           LOAD_CONST               3 (False)
+              STORE_FAST               1 (moving)
+
+173   L3:     LOAD_GLOBAL             36 (random)
+              LOAD_ATTR               38 (uniform)
+              PUSH_NULL
+              LOAD_CONST              10 (0.08)
+              LOAD_CONST              11 (0.15)
+              CALL                     2
+              STORE_FAST              12 (time_random)
+
+174           LOAD_GLOBAL             10 (keyboard)
+              LOAD_ATTR               12 (press)
+              PUSH_NULL
+              LOAD_CONST              12 ('e')
+              CALL                     1
+              POP_TOP
+
+175           LOAD_GLOBAL             14 (time)
+              LOAD_ATTR               16 (sleep)
+              PUSH_NULL
+              LOAD_FAST               12 (time_random)
+              CALL                     1
+              POP_TOP
+
+176           LOAD_GLOBAL             10 (keyboard)
+              LOAD_ATTR               40 (release)
+              PUSH_NULL
+              LOAD_CONST              12 ('e')
+              CALL                     1
+              POP_TOP
+
+178           LOAD_GLOBAL             14 (time)
+              LOAD_ATTR               16 (sleep)
+              PUSH_NULL
+              LOAD_CONST               6 (0.2)
+              CALL                     1
+              POP_TOP
+
+180   L4:     LOAD_FAST               11 (detected_char)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       43 (to L6)
+
+181           LOAD_FAST                1 (moving)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       18 (to L5)
+
+182           LOAD_FAST                0 (self)
+              LOAD_ATTR               35 (release_shift_w + NULL|self)
+              CALL                     0
+              POP_TOP
+
+183           LOAD_CONST               3 (False)
+              STORE_FAST               1 (moving)
+
+185   L5:     LOAD_FAST                0 (self)
+              LOAD_ATTR               43 (type_detected_char + NULL|self)
+              LOAD_FAST               11 (detected_char)
+              CALL                     1
+              POP_TOP
+              JUMP_FORWARD            25 (to L7)
+
+188   L6:     LOAD_FAST                1 (moving)
+              TO_BOOL
+              POP_JUMP_IF_TRUE        18 (to L7)
+
+189           LOAD_FAST                0 (self)
+              LOAD_ATTR               45 (hold_shift_w + NULL|self)
+              CALL                     0
+              POP_TOP
+
+190           LOAD_CONST               1 (True)
+              STORE_FAST               1 (moving)
+
+192   L7:     LOAD_GLOBAL             14 (time)
+              LOAD_ATTR               16 (sleep)
+              PUSH_NULL
+              LOAD_CONST              13 (0.05)
+              CALL                     1
+              POP_TOP
+
+149           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (is_running)
+              TO_BOOL
+              POP_JUMP_IF_FALSE        3 (to L8)
+              EXTENDED_ARG             1
+              JUMP_BACKWARD          393 (to L1)
+      L8:     RETURN_CONST             9 (None)
+      L9:     RETURN_CONST             9 (None)
+
+Disassembly of <code object stop_tool at 0x7f15fb1976d0, file "tool_module.py", line 196>:
+196           RESUME                   0
+
+198           LOAD_CONST               1 (False)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               0 (is_running)
+
+199           LOAD_GLOBAL              3 (print + NULL)
+              LOAD_CONST               2 ('Tool stopped.')
+              CALL                     1
+              POP_TOP
+
+201           LOAD_GLOBAL              4 (keyboard)
+              LOAD_ATTR                6 (release)
+              PUSH_NULL
+              LOAD_CONST               3 ('w')
+              CALL                     1
+              POP_TOP
+
+202           LOAD_FAST                0 (self)
+              LOAD_ATTR                4 (keyboard)
+              LOAD_ATTR                7 (release + NULL|self)
+              LOAD_GLOBAL              8 (Key)
+              LOAD_ATTR               10 (shift)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             4 (None)
+
+Disassembly of <code object start_tool_thread at 0x7f15fb00b550, file "tool_module.py", line 206>:
+206           RESUME                   0
+
+209           LOAD_FAST                0 (self)
+              LOAD_ATTR                1 (stop_all_threads + NULL|self)
+              CALL                     0
+              POP_TOP
+
+212           LOAD_CONST               1 (True)
+              LOAD_FAST                0 (self)
+              STORE_ATTR               1 (is_running)
+
+215           LOAD_GLOBAL              4 (threading)
+              LOAD_ATTR                6 (Thread)
+              PUSH_NULL
+              LOAD_FAST                0 (self)
+              LOAD_ATTR                8 (start_tool)
+              LOAD_CONST               1 (True)
+              LOAD_CONST               2 (('target', 'daemon'))
+              CALL_KW                  2
+              STORE_FAST               1 (tool_thread)
+
+221           LOAD_FAST                1 (tool_thread)
+
+220           BUILD_LIST               1
+              LOAD_FAST                0 (self)
+              STORE_ATTR               5 (threads)
+
+226           LOAD_FAST                0 (self)
+              LOAD_ATTR               10 (threads)
+              GET_ITER
+      L1:     FOR_ITER                19 (to L2)
+              STORE_FAST               2 (thread)
+
+227           LOAD_FAST                2 (thread)
+              LOAD_ATTR               13 (start + NULL|self)
+              CALL                     0
+              POP_TOP
+              JUMP_BACKWARD           21 (to L1)
+
+226   L2:     END_FOR
+              POP_TOP
+              RETURN_CONST             3 (None)
+
+Disassembly of <code object stop_all_threads at 0x559f5c15ee00, file "tool_module.py", line 233>:
+ 233            RESUME                   0
+
+ 236            LOAD_CONST               1 (False)
+                LOAD_FAST                0 (self)
+                STORE_ATTR               0 (is_running)
+
+ 237            LOAD_GLOBAL              3 (print + NULL)
+                LOAD_CONST               2 ('Dừnggggggg')
+                CALL                     1
+                POP_TOP
+
+ 240            LOAD_GLOBAL              4 (keyboard)
+                LOAD_ATTR                6 (release)
+                PUSH_NULL
+                LOAD_CONST               3 ('w')
+                CALL                     1
+                POP_TOP
+
+ 241            LOAD_FAST                0 (self)
+                LOAD_ATTR                4 (keyboard)
+                LOAD_ATTR                7 (release + NULL|self)
+                LOAD_GLOBAL              8 (Key)
+                LOAD_ATTR               10 (shift)
+                CALL                     1
+                POP_TOP
+
+ 244            LOAD_FAST                0 (self)
+                LOAD_ATTR               12 (threads)
+                GET_ITER
+        L1:     FOR_ITER                19 (to L4)
+                STORE_FAST               1 (thread)
+
+ 245            NOP
+
+ 247    L2:     LOAD_FAST                1 (thread)
+                LOAD_ATTR               15 (join + NULL|self)
+                LOAD_CONST               4 (2)
+                LOAD_CONST               5 (('timeout',))
+                CALL_KW                  1
+                POP_TOP
+        L3:     JUMP_BACKWARD           21 (to L1)
+
+ 244    L4:     END_FOR
+                POP_TOP
+
+ 251            LOAD_FAST                0 (self)
+                LOAD_ATTR               18 (comm)
+                TO_BOOL
+                POP_JUMP_IF_FALSE       36 (to L5)
+
+ 252            LOAD_FAST                0 (self)
+                LOAD_ATTR               18 (comm)
+                LOAD_ATTR               20 (stop_signal)
+                LOAD_ATTR               23 (emit + NULL|self)
+                CALL                     0
+                POP_TOP
+
+ 254    L5:     LOAD_FAST                0 (self)
+                LOAD_ATTR               12 (threads)
+                LOAD_ATTR               25 (clear + NULL|self)
+                CALL                     0
+                POP_TOP
+                RETURN_CONST             7 (None)
+
+  --    L6:     PUSH_EXC_INFO
+
+ 248            LOAD_GLOBAL             16 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       25 (to L10)
+                STORE_FAST               2 (e)
+
+ 249    L7:     LOAD_GLOBAL              3 (print + NULL)
+                LOAD_CONST               6 ('Error stopping thread: ')
+                LOAD_FAST                2 (e)
+                FORMAT_SIMPLE
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+        L8:     POP_EXCEPT
+                LOAD_CONST               7 (None)
+                STORE_FAST               2 (e)
+                DELETE_FAST              2 (e)
+                JUMP_BACKWARD          133 (to L1)
+
+  --    L9:     LOAD_CONST               7 (None)
+                STORE_FAST               2 (e)
+                DELETE_FAST              2 (e)
+                RERAISE                  1
+
+ 248   L10:     RERAISE                  0
+
+  --   L11:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L6 [1]
+  L6 to L7 -> L11 [2] lasti
+  L7 to L8 -> L9 [2] lasti
+  L9 to L11 -> L11 [2] lasti
+
+Disassembly of <code object cleanup at 0x7f15fb1923a0, file "tool_module.py", line 256>:
+ 256           RESUME                   0
+
+ 258           NOP
+
+ 260   L1:     LOAD_FAST                0 (self)
+               LOAD_ATTR                1 (stop_all_threads + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 263           LOAD_GLOBAL              3 (print + NULL)
+               LOAD_CONST               1 ('Đã dọn dẹp tài nguyên')
+               CALL                     1
+               POP_TOP
+       L2:     RETURN_CONST             5 (None)
+
+  --   L3:     PUSH_EXC_INFO
+
+ 264           LOAD_GLOBAL              4 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       70 (to L7)
+               STORE_FAST               1 (e)
+
+ 265   L4:     LOAD_GLOBAL              3 (print + NULL)
+               LOAD_CONST               2 ('Lỗi trong quá trình dọn dẹp: ')
+               LOAD_FAST                1 (e)
+               FORMAT_SIMPLE
+               BUILD_STRING             2
+               CALL                     1
+               POP_TOP
+
+ 266           NOP
+
+ 267           LOAD_GLOBAL              6 (threading)
+               LOAD_ATTR                8 (Thread)
+               PUSH_NULL
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               10 (start_tool)
+               LOAD_CONST               3 (True)
+               LOAD_CONST               4 (('target', 'daemon'))
+               CALL_KW                  2
+               LOAD_ATTR               13 (start + NULL|self)
+               CALL                     0
+               POP_TOP
+       L5:     POP_EXCEPT
+               LOAD_CONST               5 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RETURN_CONST             5 (None)
+
+  --   L6:     LOAD_CONST               5 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RERAISE                  1
+
+ 264   L7:     RERAISE                  0
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L3 [0]
+  L3 to L4 -> L8 [1] lasti
+  L4 to L5 -> L6 [1] lasti
+  L6 to L8 -> L8 [1] lasti
+

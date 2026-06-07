@@ -1,0 +1,1707 @@
+# Full disassembly of module: main_app
+# Recovered from PyInstaller bundle (Python 3.13)
+
+# === <module>()  argcount=0 ===
+# consts: [0, ('QWidget', 'QVBoxLayout', 'QLabel', 'QHBoxLayout', 'QStackedWidget', 'QMainWindow'), ('QPixmap', 'QIcon', 'QAction', 'QFont'), ('Qt', 'QMetaObject', 'QEvent', 'QTimer'), ('ModernButton',), ('WEBSITE_URL', 'resource_path', 'Tool_Name', 'Tool_Version', 'notice_and_shutdown', 'get_current_time'), ('ToolBot',), ('datetime',), None, 'explorer', 'MainPage', 'MainApp']
+# names: ['PySide6.QtWidgets', 'QWidget', 'QVBoxLayout', 'QLabel', 'QHBoxLayout', 'QStackedWidget', 'QMainWindow', 'PySide6.QtGui', 'QPixmap', 'QIcon', 'QAction', 'QFont', 'PySide6.QtCore', 'Qt', 'QMetaObject', 'QEvent', 'QTimer', 'custom_widgets', 'ModernButton', 'utils', 'WEBSITE_URL', 'resource_path', 'Tool_Name', 'Tool_Version', 'notice_and_shutdown', 'get_current_time', 'tool_module', 'ToolBot', 'datetime', 'keyboard', 'requests', 'time', 'threading', 'os', 'PROCESS_LIST', 'MainPage', 'MainApp']
+# varnames: []
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (0)
+              LOAD_CONST               1 (('QWidget', 'QVBoxLayout', 'QLabel', 'QHBoxLayout', 'QStackedWidget', 'QMainWindow'))
+              IMPORT_NAME              0 (PySide6.QtWidgets)
+              IMPORT_FROM              1 (QWidget)
+              STORE_NAME               1 (QWidget)
+              IMPORT_FROM              2 (QVBoxLayout)
+              STORE_NAME               2 (QVBoxLayout)
+              IMPORT_FROM              3 (QLabel)
+              STORE_NAME               3 (QLabel)
+              IMPORT_FROM              4 (QHBoxLayout)
+              STORE_NAME               4 (QHBoxLayout)
+              IMPORT_FROM              5 (QStackedWidget)
+              STORE_NAME               5 (QStackedWidget)
+              IMPORT_FROM              6 (QMainWindow)
+              STORE_NAME               6 (QMainWindow)
+              POP_TOP
+
+  4           LOAD_CONST               0 (0)
+              LOAD_CONST               2 (('QPixmap', 'QIcon', 'QAction', 'QFont'))
+              IMPORT_NAME              7 (PySide6.QtGui)
+              IMPORT_FROM              8 (QPixmap)
+              STORE_NAME               8 (QPixmap)
+              IMPORT_FROM              9 (QIcon)
+              STORE_NAME               9 (QIcon)
+              IMPORT_FROM             10 (QAction)
+              STORE_NAME              10 (QAction)
+              IMPORT_FROM             11 (QFont)
+              STORE_NAME              11 (QFont)
+              POP_TOP
+
+  5           LOAD_CONST               0 (0)
+              LOAD_CONST               3 (('Qt', 'QMetaObject', 'QEvent', 'QTimer'))
+              IMPORT_NAME             12 (PySide6.QtCore)
+              IMPORT_FROM             13 (Qt)
+              STORE_NAME              13 (Qt)
+              IMPORT_FROM             14 (QMetaObject)
+              STORE_NAME              14 (QMetaObject)
+              IMPORT_FROM             15 (QEvent)
+              STORE_NAME              15 (QEvent)
+              IMPORT_FROM             16 (QTimer)
+              STORE_NAME              16 (QTimer)
+              POP_TOP
+
+  6           LOAD_CONST               0 (0)
+              LOAD_CONST               4 (('ModernButton',))
+              IMPORT_NAME             17 (custom_widgets)
+              IMPORT_FROM             18 (ModernButton)
+              STORE_NAME              18 (ModernButton)
+              POP_TOP
+
+  7           LOAD_CONST               0 (0)
+              LOAD_CONST               5 (('WEBSITE_URL', 'resource_path', 'Tool_Name', 'Tool_Version', 'notice_and_shutdown', 'get_current_time'))
+              IMPORT_NAME             19 (utils)
+              IMPORT_FROM             20 (WEBSITE_URL)
+              STORE_NAME              20 (WEBSITE_URL)
+              IMPORT_FROM             21 (resource_path)
+              STORE_NAME              21 (resource_path)
+              IMPORT_FROM             22 (Tool_Name)
+              STORE_NAME              22 (Tool_Name)
+              IMPORT_FROM             23 (Tool_Version)
+              STORE_NAME              23 (Tool_Version)
+              IMPORT_FROM             24 (notice_and_shutdown)
+              STORE_NAME              24 (notice_and_shutdown)
+              IMPORT_FROM             25 (get_current_time)
+              STORE_NAME              25 (get_current_time)
+              POP_TOP
+
+  9           LOAD_CONST               0 (0)
+              LOAD_CONST               6 (('ToolBot',))
+              IMPORT_NAME             26 (tool_module)
+              IMPORT_FROM             27 (ToolBot)
+              STORE_NAME              27 (ToolBot)
+              POP_TOP
+
+ 10           LOAD_CONST               0 (0)
+              LOAD_CONST               7 (('datetime',))
+              IMPORT_NAME             28 (datetime)
+              IMPORT_FROM             28 (datetime)
+              STORE_NAME              28 (datetime)
+              POP_TOP
+
+ 11           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             26 (tool_module)
+              STORE_NAME              26 (tool_module)
+
+ 12           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             29 (keyboard)
+              STORE_NAME              29 (keyboard)
+
+ 13           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             30 (requests)
+              STORE_NAME              30 (requests)
+
+ 14           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             31 (time)
+              STORE_NAME              31 (time)
+
+ 15           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             32 (threading)
+              STORE_NAME              32 (threading)
+
+ 16           LOAD_CONST               0 (0)
+              LOAD_CONST               8 (None)
+              IMPORT_NAME             33 (os)
+              STORE_NAME              33 (os)
+
+ 20           LOAD_CONST               9 ('explorer')
+              BUILD_LIST               1
+              STORE_NAME              34 (PROCESS_LIST)
+
+ 25           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST              10 (<code object MainPage at 0x7f15faff29d0, file "main_app.py", line 25>)
+              MAKE_FUNCTION
+              LOAD_CONST              11 ('MainPage')
+              LOAD_NAME                1 (QWidget)
+              CALL                     3
+              STORE_NAME              35 (MainPage)
+
+250           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST              12 (<code object MainApp at 0x7f15fae908b0, file "main_app.py", line 250>)
+              MAKE_FUNCTION
+              LOAD_CONST              13 ('MainApp')
+              LOAD_NAME                6 (QMainWindow)
+              CALL                     3
+              STORE_NAME              36 (MainApp)
+              RETURN_CONST             8 (None)
+
+Disassembly of <code object MainPage at 0x7f15faff29d0, file "main_app.py", line 25>:
+  --           MAKE_CELL                0 (__class__)
+
+  25           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('MainPage')
+               STORE_NAME               2 (__qualname__)
+               LOAD_CONST               1 (25)
+               STORE_NAME               3 (__firstlineno__)
+
+  26           LOAD_FAST                0 (__class__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __init__ at 0x559f5c210b00, file "main_app.py", line 26>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_NAME               4 (__init__)
+
+ 166           LOAD_CONST               3 (<code object update_version_info at 0x559f5c1f8570, file "main_app.py", line 166>)
+               MAKE_FUNCTION
+               STORE_NAME               5 (update_version_info)
+
+ 180           LOAD_CONST               4 (<code object shortcut at 0x7f15fb008fd0, file "main_app.py", line 180>)
+               MAKE_FUNCTION
+               STORE_NAME               6 (shortcut)
+
+ 188           LOAD_CONST               5 (<code object update_ui_safe at 0x7f15fb0383c0, file "main_app.py", line 188>)
+               MAKE_FUNCTION
+               STORE_NAME               7 (update_ui_safe)
+
+ 196           LOAD_CONST               6 (<code object stop_tool at 0x7f15fafea5b0, file "main_app.py", line 196>)
+               MAKE_FUNCTION
+               STORE_NAME               8 (stop_tool)
+
+ 201           LOAD_CONST               7 (<code object start_tool at 0x559f5c1bc6c0, file "main_app.py", line 201>)
+               MAKE_FUNCTION
+               STORE_NAME               9 (start_tool)
+
+ 225           LOAD_CONST               8 (<code object stop_tool at 0x559f5c20ec60, file "main_app.py", line 225>)
+               MAKE_FUNCTION
+               STORE_NAME               8 (stop_tool)
+               LOAD_CONST               9 (('count_device_remain', 'discord_contact', 'expiration_label', 'expỉation_time', 'is_tool', 'layout', 'logined', 'logo', 'note', 'pause_button', 'shortcut_label', 'start_button', 'tool_bot', 'tool_name_label', 'update_notice_label', 'version_layout', 'website_label'))
+               STORE_NAME              10 (__static_attributes__)
+               LOAD_FAST                0 (__class__)
+               COPY                     1
+               STORE_NAME              11 (__classcell__)
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x559f5c210b00, file "main_app.py", line 26>:
+  --           COPY_FREE_VARS           1
+
+  26           RESUME                   0
+
+  27           LOAD_GLOBAL              0 (super)
+               LOAD_DEREF               7 (__class__)
+               LOAD_FAST                0 (self)
+               LOAD_SUPER_ATTR          5 (__init__ + NULL|self)
+               CALL                     0
+               POP_TOP
+
+  28           LOAD_CONST               1 (False)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               2 (logined)
+
+  30           LOAD_GLOBAL              6 (tool_module)
+               LOAD_ATTR                8 (comm)
+               LOAD_ATTR               10 (update_signal)
+               LOAD_ATTR               13 (connect + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               14 (stop_tool)
+               CALL                     1
+               POP_TOP
+
+  31           LOAD_FAST_LOAD_FAST     32 (count_device_remain, self)
+               STORE_ATTR               8 (count_device_remain)
+
+  33           LOAD_FAST_LOAD_FAST     48 (expỉation_time, self)
+               STORE_ATTR               9 (expỉation_time)
+
+  34           LOAD_FAST_LOAD_FAST     16 (tool_bot, self)
+               STORE_ATTR              10 (tool_bot)
+
+  35           LOAD_CONST               1 (False)
+               LOAD_FAST                0 (self)
+               STORE_ATTR              11 (is_tool)
+
+  36           LOAD_GLOBAL             25 (QVBoxLayout + NULL)
+               LOAD_FAST                0 (self)
+               CALL                     1
+               LOAD_FAST                0 (self)
+               STORE_ATTR              13 (layout)
+
+  37           LOAD_FAST                0 (self)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST               2 ('background-color: #121212; color: white;')
+               CALL                     1
+               POP_TOP
+
+  38           LOAD_GLOBAL             31 (QLabel + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              16 (logo)
+
+  39           LOAD_GLOBAL             35 (QPixmap + NULL)
+               LOAD_GLOBAL             37 (resource_path + NULL)
+               LOAD_CONST               3 ('resources\\logo.png')
+               CALL                     1
+               CALL                     1
+               STORE_FAST               4 (pixmap)
+
+  40           LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (logo)
+               LOAD_ATTR               39 (setPixmap + NULL|self)
+               LOAD_FAST                4 (pixmap)
+               LOAD_ATTR               41 (scaled + NULL|self)
+               LOAD_CONST               4 (100)
+               LOAD_CONST               4 (100)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               44 (KeepAspectRatio)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               46 (SmoothTransformation)
+               CALL                     4
+               CALL                     1
+               POP_TOP
+
+  41           LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (logo)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  42           LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (logo)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  43           LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (logo)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST               5 ('background: rgba(0, 0, 0, 0);')
+               CALL                     1
+               POP_TOP
+
+  45           LOAD_GLOBAL             31 (QLabel + NULL)
+               LOAD_CONST               6 ('3 Nghề Gỗ/Đá/Công Trường')
+               CALL                     1
+               LOAD_FAST                0 (self)
+               STORE_ATTR              28 (tool_name_label)
+
+  46           LOAD_FAST                0 (self)
+               LOAD_ATTR               56 (tool_name_label)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  47           LOAD_FAST                0 (self)
+               LOAD_ATTR               56 (tool_name_label)
+               LOAD_ATTR               59 (setFont + NULL|self)
+               LOAD_GLOBAL             61 (QFont + NULL)
+               LOAD_CONST               7 ('Arial')
+               LOAD_CONST               8 (14)
+               LOAD_GLOBAL             60 (QFont)
+               LOAD_ATTR               62 (Medium)
+               CALL                     3
+               CALL                     1
+               POP_TOP
+
+  48           LOAD_FAST                0 (self)
+               LOAD_ATTR               56 (tool_name_label)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  50           LOAD_GLOBAL             31 (QLabel + NULL)
+               LOAD_CONST               9 ('Hãy tắt HUD (Shift + L) để hoạt động hiệu quả')
+               CALL                     1
+               LOAD_FAST                0 (self)
+               STORE_ATTR              32 (note)
+
+  51           LOAD_FAST                0 (self)
+               LOAD_ATTR               64 (note)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  52           LOAD_FAST                0 (self)
+               LOAD_ATTR               64 (note)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST              10 ('font-size: 13px; color: white;')
+               CALL                     1
+               POP_TOP
+
+  54           LOAD_FAST                0 (self)
+               LOAD_ATTR               64 (note)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  56           LOAD_GLOBAL             31 (QLabel + NULL)
+               LOAD_CONST              11 ('')
+               CALL                     1
+               LOAD_FAST                0 (self)
+               STORE_ATTR              33 (expiration_label)
+
+  57           LOAD_FAST                0 (self)
+               LOAD_ATTR               66 (expiration_label)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  58           LOAD_FAST                0 (self)
+               LOAD_ATTR               66 (expiration_label)
+               LOAD_ATTR               59 (setFont + NULL|self)
+               LOAD_GLOBAL             61 (QFont + NULL)
+               LOAD_CONST              12 ('Segoe UI')
+               LOAD_CONST              13 (12)
+               LOAD_GLOBAL             60 (QFont)
+               LOAD_ATTR               62 (Medium)
+               CALL                     3
+               CALL                     1
+               POP_TOP
+
+  59           LOAD_FAST                0 (self)
+               LOAD_ATTR               66 (expiration_label)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST              14 ('color: green;')
+               CALL                     1
+               POP_TOP
+
+  60           LOAD_FAST                0 (self)
+               LOAD_ATTR               66 (expiration_label)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  62           LOAD_GLOBAL             31 (QLabel + NULL)
+               LOAD_CONST              15 ('Phím tắt: Nhấn ↑ để bắt đầu, ↓ để dừng')
+               CALL                     1
+               LOAD_FAST                0 (self)
+               STORE_ATTR              34 (shortcut_label)
+
+  63           LOAD_FAST                0 (self)
+               LOAD_ATTR               68 (shortcut_label)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               70 (AlignmentFlag)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  64           LOAD_FAST                0 (self)
+               LOAD_ATTR               68 (shortcut_label)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST              16 ('font-size: 12px; color: gray;')
+               CALL                     1
+               POP_TOP
+
+  65           LOAD_FAST                0 (self)
+               LOAD_ATTR               68 (shortcut_label)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  68           LOAD_GLOBAL             73 (QHBoxLayout + NULL)
+               CALL                     0
+               STORE_FAST               5 (main_button_layout)
+
+  69           LOAD_GLOBAL             75 (ModernButton + NULL)
+               LOAD_CONST              17 ('Bắt đầu')
+               LOAD_CONST              18 ('#33383D')
+               CALL                     2
+               LOAD_FAST                0 (self)
+               STORE_ATTR              38 (start_button)
+
+  70           LOAD_GLOBAL             75 (ModernButton + NULL)
+               LOAD_CONST              19 ('Tạm dừng')
+               LOAD_CONST              18 ('#33383D')
+               CALL                     2
+               LOAD_FAST                0 (self)
+               STORE_ATTR              39 (pause_button)
+
+  71           LOAD_FAST                5 (main_button_layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               76 (start_button)
+               CALL                     1
+               POP_TOP
+
+  72           LOAD_FAST                5 (main_button_layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               78 (pause_button)
+               CALL                     1
+               POP_TOP
+
+  76           LOAD_GLOBAL             31 (QLabel + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              41 (discord_contact)
+
+  77           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+  78           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               85 (setTextFormat + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               86 (RichText)
+               CALL                     1
+               POP_TOP
+
+  79           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               89 (setOpenExternalLinks + NULL|self)
+               LOAD_CONST               1 (False)
+               CALL                     1
+               POP_TOP
+
+  80           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+  83           LOAD_GLOBAL             37 (resource_path + NULL)
+               LOAD_CONST              20 ('resources\\discord.png')
+               CALL                     1
+               STORE_FAST               6 (discord_logo_path)
+
+  84           LOAD_FAST                6 (discord_logo_path)
+               TO_BOOL
+               POP_JUMP_IF_FALSE      118 (to L1)
+
+  85           LOAD_GLOBAL             35 (QPixmap + NULL)
+               LOAD_FAST                6 (discord_logo_path)
+               CALL                     1
+               STORE_FAST               4 (pixmap)
+
+  86           LOAD_FAST                4 (pixmap)
+               LOAD_ATTR               41 (scaled + NULL|self)
+               LOAD_CONST              21 (18)
+               LOAD_CONST              21 (18)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               44 (KeepAspectRatio)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               46 (SmoothTransformation)
+               CALL                     4
+               STORE_FAST               4 (pixmap)
+
+  87           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               39 (setPixmap + NULL|self)
+               LOAD_FAST                4 (pixmap)
+               CALL                     1
+               POP_TOP
+
+  89           LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               91 (setText + NULL|self)
+
+  90           LOAD_CONST              22 ('<a href="discord"><img src="')
+               LOAD_FAST                6 (discord_logo_path)
+               FORMAT_SIMPLE
+               LOAD_CONST              23 ('" width="18" height="18" style="vertical-align:middle;"> <span style="color:#03A9F4; font-size:12px; text-decoration:none;">Discord</span></a>')
+               BUILD_STRING             3
+
+  89           CALL                     1
+               POP_TOP
+               JUMP_FORWARD            27 (to L2)
+
+  95   L1:     LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               91 (setText + NULL|self)
+
+  96           LOAD_CONST              24 ('<a href="discord"><span style="color:#03A9F4; font-size:16px; text-decoration:none;">Discord</span></a>')
+
+  95           CALL                     1
+               POP_TOP
+
+  99   L2:     LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               LOAD_ATTR               92 (linkActivated)
+               LOAD_ATTR               13 (connect + NULL|self)
+
+ 100           LOAD_CONST              25 (<code object <lambda> at 0x7f15fae90140, file "main_app.py", line 100>)
+               MAKE_FUNCTION
+
+  99           CALL                     1
+               POP_TOP
+
+ 103           LOAD_GLOBAL             31 (QLabel + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              47 (website_label)
+
+ 104           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               85 (setTextFormat + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               86 (RichText)
+               CALL                     1
+               POP_TOP
+
+ 105           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+ 106           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               97 (setTextInteractionFlags + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               98 (TextBrowserInteraction)
+               CALL                     1
+               POP_TOP
+
+ 107           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               89 (setOpenExternalLinks + NULL|self)
+               LOAD_CONST              26 (True)
+               CALL                     1
+               POP_TOP
+
+ 108           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR              101 (setCursor + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR              102 (PointingHandCursor)
+               CALL                     1
+               POP_TOP
+
+ 111           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               91 (setText + NULL|self)
+
+ 112           LOAD_CONST              27 ('<html><head><style>a{ text-decoration:none; color:#3498db; font-weight:600; font-size:13px;}a:hover{ color:#e74c3c; }</style></head><body><a href="')
+
+ 116           LOAD_GLOBAL            104 (WEBSITE_URL)
+
+ 112           BINARY_OP                0 (+)
+
+ 116           LOAD_CONST              28 ('">Website quản lý</a></body></html>')
+
+ 112           BINARY_OP                0 (+)
+
+ 111           CALL                     1
+               POP_TOP
+
+ 121           LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST              29 ('QLabel { background: transparent; }')
+               CALL                     1
+               POP_TOP
+
+ 125           LOAD_GLOBAL             25 (QVBoxLayout + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              53 (version_layout)
+
+ 126           LOAD_FAST                0 (self)
+               LOAD_ATTR              106 (version_layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 127           LOAD_GLOBAL             31 (QLabel + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              55 (update_notice_label)
+
+ 128           LOAD_FAST                0 (self)
+               LOAD_ATTR              110 (update_notice_label)
+               LOAD_ATTR               29 (setStyleSheet + NULL|self)
+               LOAD_CONST              30 ('color: #ff8800; font-size: 12px;')
+               CALL                     1
+               POP_TOP
+
+ 129           LOAD_FAST                0 (self)
+               LOAD_ATTR              110 (update_notice_label)
+               LOAD_ATTR               49 (setAlignment + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               50 (AlignCenter)
+               CALL                     1
+               POP_TOP
+
+ 130           LOAD_FAST                0 (self)
+               LOAD_ATTR              110 (update_notice_label)
+               LOAD_ATTR               53 (setAttribute + NULL|self)
+               LOAD_GLOBAL             42 (Qt)
+               LOAD_ATTR               54 (WA_TranslucentBackground)
+               CALL                     1
+               POP_TOP
+
+ 131           LOAD_FAST                0 (self)
+               LOAD_ATTR              110 (update_notice_label)
+               LOAD_ATTR               91 (setText + NULL|self)
+               LOAD_CONST              11 ('')
+               CALL                     1
+               POP_TOP
+
+ 132           LOAD_FAST                0 (self)
+               LOAD_ATTR              106 (version_layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR              110 (update_notice_label)
+               CALL                     1
+               POP_TOP
+
+ 136           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (logo)
+               CALL                     1
+               POP_TOP
+
+ 137           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 138           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               56 (tool_name_label)
+               CALL                     1
+               POP_TOP
+
+ 139           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 140           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               66 (expiration_label)
+               CALL                     1
+               POP_TOP
+
+ 141           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               64 (note)
+               CALL                     1
+               POP_TOP
+
+ 142           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 144           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              113 (addLayout + NULL|self)
+               LOAD_FAST                5 (main_button_layout)
+               CALL                     1
+               POP_TOP
+
+ 145           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               68 (shortcut_label)
+               CALL                     1
+               POP_TOP
+
+ 146           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 147           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               82 (discord_contact)
+               CALL                     1
+               POP_TOP
+
+ 148           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              109 (addStretch + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 149           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR               81 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               94 (website_label)
+               CALL                     1
+               POP_TOP
+
+ 151           LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               LOAD_ATTR              113 (addLayout + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR              106 (version_layout)
+               CALL                     1
+               POP_TOP
+
+ 154           LOAD_FAST                0 (self)
+               LOAD_ATTR              115 (setLayout + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (layout)
+               CALL                     1
+               POP_TOP
+
+ 157           LOAD_GLOBAL            116 (threading)
+               LOAD_ATTR              118 (Thread)
+               PUSH_NULL
+               LOAD_FAST                0 (self)
+               LOAD_ATTR              120 (shortcut)
+               LOAD_CONST              26 (True)
+               LOAD_CONST              31 (('target', 'daemon'))
+               CALL_KW                  2
+               LOAD_ATTR              123 (start + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 159           LOAD_FAST                0 (self)
+               LOAD_ATTR               78 (pause_button)
+               LOAD_ATTR              125 (setEnabled + NULL|self)
+               LOAD_CONST               1 (False)
+               CALL                     1
+               POP_TOP
+
+ 162           LOAD_FAST                0 (self)
+               LOAD_ATTR               76 (start_button)
+               LOAD_ATTR              126 (clicked)
+               LOAD_ATTR               13 (connect + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR              128 (start_tool)
+               CALL                     1
+               POP_TOP
+
+ 163           LOAD_FAST                0 (self)
+               LOAD_ATTR               78 (pause_button)
+               LOAD_ATTR              126 (clicked)
+               LOAD_ATTR               13 (connect + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               14 (stop_tool)
+               CALL                     1
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object <lambda> at 0x7f15fae90140, file "main_app.py", line 100>:
+100           RESUME                   0
+              LOAD_FAST                0 (link)
+              LOAD_CONST               1 ('discord')
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE       22 (to L1)
+              LOAD_GLOBAL              0 (os)
+              LOAD_ATTR                2 (startfile)
+              PUSH_NULL
+              LOAD_CONST               2 ('https://discord.gg/6CJTEPaB4s')
+              CALL                     1
+              RETURN_VALUE
+      L1:     LOAD_CONST               0 (None)
+              RETURN_VALUE
+
+Disassembly of <code object update_version_info at 0x559f5c1f8570, file "main_app.py", line 166>:
+166           RESUME                   0
+
+167           LOAD_FAST                1 (response)
+              LOAD_ATTR                1 (get + NULL|self)
+              LOAD_CONST               1 ('lastestVersion')
+              CALL                     1
+              STORE_FAST               2 (latest_version)
+
+168           LOAD_FAST                1 (response)
+              LOAD_ATTR                1 (get + NULL|self)
+              LOAD_CONST               2 ('linkDownload')
+              CALL                     1
+              STORE_FAST               3 (link_download)
+
+169           LOAD_GLOBAL              3 (print + NULL)
+              LOAD_CONST               3 ('Latest version from server:')
+              LOAD_FAST                2 (latest_version)
+              CALL                     2
+              POP_TOP
+
+170           LOAD_FAST                2 (latest_version)
+              TO_BOOL
+              POP_JUMP_IF_FALSE      145 (to L2)
+
+171           LOAD_GLOBAL              4 (Tool_Version)
+              LOAD_FAST                2 (latest_version)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE      107 (to L1)
+              LOAD_FAST                3 (link_download)
+              TO_BOOL
+              POP_JUMP_IF_FALSE      100 (to L1)
+
+172           LOAD_FAST                0 (self)
+              LOAD_ATTR                6 (update_notice_label)
+              LOAD_ATTR                9 (setText + NULL|self)
+
+173           LOAD_CONST               4 ('Có phiên bản mới! Tải file <a href="')
+              LOAD_FAST                3 (link_download)
+              FORMAT_SIMPLE
+              LOAD_CONST               5 ('">Tại đây</a>')
+              BUILD_STRING             3
+
+172           CALL                     1
+              POP_TOP
+
+175           LOAD_FAST                0 (self)
+              LOAD_ATTR                6 (update_notice_label)
+              LOAD_ATTR               11 (setTextInteractionFlags + NULL|self)
+              LOAD_GLOBAL             12 (Qt)
+              LOAD_ATTR               14 (TextBrowserInteraction)
+              CALL                     1
+              POP_TOP
+
+176           LOAD_FAST                0 (self)
+              LOAD_ATTR                6 (update_notice_label)
+              LOAD_ATTR               17 (setOpenExternalLinks + NULL|self)
+              LOAD_CONST               6 (True)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+178   L1:     LOAD_FAST                0 (self)
+              LOAD_ATTR                6 (update_notice_label)
+              LOAD_ATTR                9 (setText + NULL|self)
+              LOAD_CONST               7 ('')
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+170   L2:     RETURN_CONST             0 (None)
+
+Disassembly of <code object shortcut at 0x7f15fb008fd0, file "main_app.py", line 180>:
+  --           MAKE_CELL                0 (self)
+
+ 180           RESUME                   0
+
+ 181           NOP
+
+ 182   L1:     LOAD_DEREF               0 (self)
+               LOAD_ATTR                0 (logined)
+               TO_BOOL
+               POP_JUMP_IF_FALSE       55 (to L2)
+
+ 183           LOAD_GLOBAL              2 (keyboard)
+               LOAD_ATTR                4 (on_press_key)
+               PUSH_NULL
+               LOAD_CONST               1 ('up')
+               LOAD_FAST                0 (self)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object <lambda> at 0x7f15fae90360, file "main_app.py", line 183>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               CALL                     2
+               POP_TOP
+
+ 184           LOAD_GLOBAL              2 (keyboard)
+               LOAD_ATTR                4 (on_press_key)
+               PUSH_NULL
+               LOAD_CONST               3 ('down')
+               LOAD_FAST                0 (self)
+               BUILD_TUPLE              1
+               LOAD_CONST               4 (<code object <lambda> at 0x7f15fae90580, file "main_app.py", line 184>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               CALL                     2
+               POP_TOP
+
+ 185           RETURN_CONST             0 (None)
+
+ 186   L2:     LOAD_GLOBAL              6 (time)
+               LOAD_ATTR                8 (sleep)
+               PUSH_NULL
+               LOAD_CONST               5 (2)
+               CALL                     1
+               POP_TOP
+
+ 181           JUMP_BACKWARD           96 (to L1)
+
+Disassembly of <code object <lambda> at 0x7f15fae90360, file "main_app.py", line 183>:
+  --           COPY_FREE_VARS           1
+
+ 183           RESUME                   0
+               LOAD_DEREF               1 (self)
+               LOAD_ATTR                1 (update_ui_safe + NULL|self)
+               LOAD_DEREF               1 (self)
+               LOAD_ATTR                2 (start_tool)
+               CALL                     1
+               RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f15fae90580, file "main_app.py", line 184>:
+  --           COPY_FREE_VARS           1
+
+ 184           RESUME                   0
+               LOAD_DEREF               1 (self)
+               LOAD_ATTR                1 (update_ui_safe + NULL|self)
+               LOAD_DEREF               1 (self)
+               LOAD_ATTR                2 (stop_tool)
+               CALL                     1
+               RETURN_VALUE
+
+Disassembly of <code object update_ui_safe at 0x7f15fb0383c0, file "main_app.py", line 188>:
+188           RESUME                   0
+
+190           LOAD_GLOBAL              0 (QMetaObject)
+              LOAD_ATTR                2 (invokeMethod)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST      1 (self, method)
+              LOAD_ATTR                4 (__name__)
+              LOAD_GLOBAL              6 (Qt)
+              LOAD_ATTR                8 (QueuedConnection)
+              CALL                     3
+              POP_TOP
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object stop_tool at 0x7f15fafea5b0, file "main_app.py", line 196>:
+196           RESUME                   0
+
+197           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (start_button)
+              LOAD_ATTR                3 (setText + NULL|self)
+              LOAD_CONST               1 ('Start')
+              CALL                     1
+              POP_TOP
+
+198           LOAD_FAST                0 (self)
+              LOAD_ATTR                0 (start_button)
+              LOAD_ATTR                5 (setEnabled + NULL|self)
+              LOAD_CONST               2 (True)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             0 (None)
+
+Disassembly of <code object start_tool at 0x559f5c1bc6c0, file "main_app.py", line 201>:
+ 201           RESUME                   0
+
+ 203           LOAD_FAST                0 (self)
+               LOAD_ATTR                0 (is_tool)
+               TO_BOOL
+               POP_JUMP_IF_TRUE       116 (to L3)
+
+ 204           NOP
+
+ 206   L1:     LOAD_FAST                0 (self)
+               LOAD_ATTR                2 (tool_bot)
+               LOAD_ATTR                5 (start_tool_thread + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 209           LOAD_FAST                0 (self)
+               LOAD_ATTR                6 (start_button)
+               LOAD_ATTR                9 (setText + NULL|self)
+               LOAD_CONST               1 ('Đang chạy')
+               CALL                     1
+               POP_TOP
+
+ 210           LOAD_FAST                0 (self)
+               LOAD_ATTR                6 (start_button)
+               LOAD_ATTR               11 (setStyleSheet + NULL|self)
+               LOAD_CONST               2 ('\n                    ModernButton {\n                        background-color: #4CAF50;\n                        color: white;\n                        border-radius: 10px;\n                        padding: 12px;\n                        font-weight: bold;\n                    }\n                ')
+               CALL                     1
+               POP_TOP
+
+ 219           LOAD_FAST                0 (self)
+               LOAD_ATTR               12 (pause_button)
+               LOAD_ATTR               15 (setEnabled + NULL|self)
+               LOAD_CONST               3 (True)
+               CALL                     1
+               POP_TOP
+
+ 221           LOAD_CONST               3 (True)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               0 (is_tool)
+       L2:     RETURN_CONST             0 (None)
+
+ 203   L3:     RETURN_CONST             0 (None)
+
+  --   L4:     PUSH_EXC_INFO
+
+ 222           LOAD_GLOBAL             16 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       21 (to L8)
+               STORE_FAST               1 (e)
+
+ 223   L5:     LOAD_GLOBAL             19 (print + NULL)
+               LOAD_FAST                1 (e)
+               CALL                     1
+               POP_TOP
+       L6:     POP_EXCEPT
+               LOAD_CONST               0 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RETURN_CONST             0 (None)
+
+  --   L7:     LOAD_CONST               0 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RERAISE                  1
+
+ 222   L8:     RERAISE                  0
+
+  --   L9:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L4 [0]
+  L4 to L5 -> L9 [1] lasti
+  L5 to L6 -> L7 [1] lasti
+  L7 to L9 -> L9 [1] lasti
+
+Disassembly of <code object stop_tool at 0x559f5c20ec60, file "main_app.py", line 225>:
+ 225           RESUME                   0
+
+ 227           LOAD_FAST                0 (self)
+               LOAD_ATTR                0 (is_tool)
+               TO_BOOL
+               POP_JUMP_IF_FALSE      127 (to L3)
+
+ 228           NOP
+
+ 229   L1:     LOAD_GLOBAL              3 (print + NULL)
+               LOAD_CONST               1 ('stop')
+               CALL                     1
+               POP_TOP
+
+ 231           LOAD_FAST                0 (self)
+               LOAD_ATTR                4 (tool_bot)
+               LOAD_ATTR                7 (cleanup + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 234           LOAD_FAST                0 (self)
+               LOAD_ATTR                8 (start_button)
+               LOAD_ATTR               11 (setText + NULL|self)
+               LOAD_CONST               2 ('Bắt đầu')
+               CALL                     1
+               POP_TOP
+
+ 235           LOAD_FAST                0 (self)
+               LOAD_ATTR                8 (start_button)
+               LOAD_ATTR               13 (setStyleSheet + NULL|self)
+               LOAD_CONST               3 ('\n                    ModernButton {\n                        background-color: #33383D;\n                        color: white;\n                        border-radius: 10px;\n                        padding: 12px;\n                    }\n                ')
+               CALL                     1
+               POP_TOP
+
+ 243           LOAD_FAST                0 (self)
+               LOAD_ATTR               14 (pause_button)
+               LOAD_ATTR               17 (setEnabled + NULL|self)
+               LOAD_CONST               4 (False)
+               CALL                     1
+               POP_TOP
+
+ 245           LOAD_CONST               4 (False)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               0 (is_tool)
+       L2:     RETURN_CONST             0 (None)
+
+ 227   L3:     RETURN_CONST             0 (None)
+
+  --   L4:     PUSH_EXC_INFO
+
+ 246           LOAD_GLOBAL             18 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       21 (to L8)
+               STORE_FAST               1 (e)
+
+ 247   L5:     LOAD_GLOBAL              3 (print + NULL)
+               LOAD_FAST                1 (e)
+               CALL                     1
+               POP_TOP
+       L6:     POP_EXCEPT
+               LOAD_CONST               0 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RETURN_CONST             0 (None)
+
+  --   L7:     LOAD_CONST               0 (None)
+               STORE_FAST               1 (e)
+               DELETE_FAST              1 (e)
+               RERAISE                  1
+
+ 246   L8:     RERAISE                  0
+
+  --   L9:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L4 [0]
+  L4 to L5 -> L9 [1] lasti
+  L5 to L6 -> L7 [1] lasti
+  L7 to L9 -> L9 [1] lasti
+
+Disassembly of <code object MainApp at 0x7f15fae908b0, file "main_app.py", line 250>:
+  --           MAKE_CELL                0 (__class__)
+
+ 250           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('MainApp')
+               STORE_NAME               2 (__qualname__)
+               LOAD_CONST               1 (250)
+               STORE_NAME               3 (__firstlineno__)
+
+ 251           LOAD_FAST                0 (__class__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __init__ at 0x559f5c1b04a0, file "main_app.py", line 251>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_NAME               4 (__init__)
+
+ 291           LOAD_CONST               3 (<code object update_username at 0x7f15fafcdd40, file "main_app.py", line 291>)
+               MAKE_FUNCTION
+               STORE_NAME               5 (update_username)
+
+ 297           LOAD_CONST               4 (<code object update_device_remain at 0x7f15fae90690, file "main_app.py", line 297>)
+               MAKE_FUNCTION
+               STORE_NAME               6 (update_device_remain)
+
+ 302           LOAD_CONST               5 (<code object update_expiration_time at 0x559f5c1eb9f0, file "main_app.py", line 302>)
+               MAKE_FUNCTION
+               STORE_NAME               7 (update_expiration_time)
+
+ 350           LOAD_CONST               6 (<code object closeEvent at 0x7f15fae907a0, file "main_app.py", line 350>)
+               MAKE_FUNCTION
+               STORE_NAME               8 (closeEvent)
+
+ 356           LOAD_CONST               7 (<code object send_logout at 0x7f15fb16a010, file "main_app.py", line 356>)
+               MAKE_FUNCTION
+               STORE_NAME               9 (send_logout)
+               LOAD_CONST               8 (('_expiration_timer', 'count_device_remain', 'expiration_time', 'login_page', 'main_page', 'password', 'stacked_widget', 'tool_bot', 'username'))
+               STORE_NAME              10 (__static_attributes__)
+               LOAD_FAST                0 (__class__)
+               COPY                     1
+               STORE_NAME              11 (__classcell__)
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x559f5c1b04a0, file "main_app.py", line 251>:
+  --           COPY_FREE_VARS           1
+
+ 251           RESUME                   0
+
+ 252           LOAD_GLOBAL              0 (super)
+               LOAD_DEREF               4 (__class__)
+               LOAD_FAST                0 (self)
+               LOAD_SUPER_ATTR          5 (__init__ + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 253           LOAD_CONST               0 (None)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               2 (username)
+
+ 254           LOAD_CONST               0 (None)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               3 (count_device_remain)
+
+ 255           LOAD_CONST               1 (0)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               4 (expiration_time)
+
+ 258           LOAD_FAST                0 (self)
+               LOAD_ATTR               11 (setWindowIcon + NULL|self)
+               LOAD_GLOBAL             13 (QIcon + NULL)
+               LOAD_GLOBAL             15 (resource_path + NULL)
+               LOAD_CONST               2 ('resources\\icon.ico')
+               CALL                     1
+               CALL                     1
+               CALL                     1
+               POP_TOP
+
+ 260           LOAD_FAST                0 (self)
+               LOAD_ATTR               17 (setStyleSheet + NULL|self)
+               LOAD_CONST               3 ('background-color: #1e1e1e; color: white; border-radius: 15px;')
+               CALL                     1
+               POP_TOP
+
+ 261           LOAD_FAST                0 (self)
+               LOAD_ATTR               19 (setFixedSize + NULL|self)
+               LOAD_CONST               4 (350)
+               LOAD_CONST               5 (400)
+               CALL                     2
+               POP_TOP
+
+ 263           LOAD_CONST               1 (0)
+               LOAD_CONST               6 (('LoginPage',))
+               IMPORT_NAME             10 (login)
+               IMPORT_FROM             11 (LoginPage)
+               STORE_FAST               1 (LoginPage)
+               POP_TOP
+
+ 267           LOAD_GLOBAL             25 (ToolBot + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              13 (tool_bot)
+
+ 270           LOAD_FAST                0 (self)
+               LOAD_ATTR                6 (count_device_remain)
+               POP_JUMP_IF_NOT_NONE     7 (to L1)
+
+ 271           LOAD_CONST               1 (0)
+               LOAD_FAST                0 (self)
+               STORE_ATTR               3 (count_device_remain)
+
+ 273   L1:     LOAD_GLOBAL             29 (QStackedWidget + NULL)
+               CALL                     0
+               LOAD_FAST                0 (self)
+               STORE_ATTR              15 (stacked_widget)
+
+ 274           LOAD_FAST                1 (LoginPage)
+               PUSH_NULL
+               LOAD_FAST_LOAD_FAST      0 (self, self)
+               LOAD_ATTR               30 (stacked_widget)
+               CALL                     2
+               LOAD_FAST                0 (self)
+               STORE_ATTR              16 (login_page)
+
+ 275           LOAD_GLOBAL             35 (MainPage + NULL)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               26 (tool_bot)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR                6 (count_device_remain)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR                8 (expiration_time)
+               CALL                     3
+               LOAD_FAST                0 (self)
+               STORE_ATTR              18 (main_page)
+
+ 277           LOAD_FAST                0 (self)
+               LOAD_ATTR               30 (stacked_widget)
+               LOAD_ATTR               39 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               32 (login_page)
+               CALL                     1
+               POP_TOP
+
+ 278           LOAD_FAST                0 (self)
+               LOAD_ATTR               30 (stacked_widget)
+               LOAD_ATTR               39 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               36 (main_page)
+               CALL                     1
+               POP_TOP
+
+ 284           LOAD_GLOBAL             41 (QWidget + NULL)
+               CALL                     0
+               STORE_FAST               2 (central_widget)
+
+ 285           LOAD_GLOBAL             43 (QVBoxLayout + NULL)
+               LOAD_FAST                2 (central_widget)
+               CALL                     1
+               STORE_FAST               3 (layout)
+
+ 286           LOAD_FAST                3 (layout)
+               LOAD_ATTR               39 (addWidget + NULL|self)
+               LOAD_FAST                0 (self)
+               LOAD_ATTR               30 (stacked_widget)
+               CALL                     1
+               POP_TOP
+
+ 287           LOAD_FAST                0 (self)
+               LOAD_ATTR               45 (setCentralWidget + NULL|self)
+               LOAD_FAST                2 (central_widget)
+               CALL                     1
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object update_username at 0x7f15fafcdd40, file "main_app.py", line 291>:
+291           RESUME                   0
+
+293           LOAD_FAST_LOAD_FAST     16 (username, self)
+              STORE_ATTR               0 (username)
+
+294           LOAD_FAST_LOAD_FAST     32 (password, self)
+              STORE_ATTR               1 (password)
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object update_device_remain at 0x7f15fae90690, file "main_app.py", line 297>:
+297           RESUME                   0
+
+299           LOAD_FAST_LOAD_FAST     16 (count_device_remain, self)
+              STORE_ATTR               0 (count_device_remain)
+
+300           LOAD_FAST                0 (self)
+              LOAD_ATTR                2 (main_page)
+              LOAD_ATTR                5 (update_count_device_remain + NULL|self)
+              LOAD_FAST                1 (count_device_remain)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object update_expiration_time at 0x559f5c1eb9f0, file "main_app.py", line 302>:
+  --           MAKE_CELL                0 (self)
+
+ 302           RESUME                   0
+
+ 304           LOAD_FAST                1 (expiration_time)
+               LOAD_DEREF               0 (self)
+               STORE_ATTR               0 (expiration_time)
+
+ 307           LOAD_FAST                0 (self)
+               BUILD_TUPLE              1
+               LOAD_CONST               1 (<code object update_expiration_label at 0x559f5c20e6f0, file "main_app.py", line 307>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_FAST               2 (update_expiration_label)
+
+ 339           LOAD_GLOBAL              3 (hasattr + NULL)
+               LOAD_DEREF               0 (self)
+               LOAD_CONST               2 ('_expiration_timer')
+               CALL                     2
+               TO_BOOL
+               POP_JUMP_IF_FALSE       39 (to L1)
+               LOAD_DEREF               0 (self)
+               LOAD_ATTR                4 (_expiration_timer)
+               POP_JUMP_IF_NONE        26 (to L1)
+
+ 340           LOAD_DEREF               0 (self)
+               LOAD_ATTR                4 (_expiration_timer)
+               LOAD_ATTR                7 (stop + NULL|self)
+               CALL                     0
+               POP_TOP
+
+ 343   L1:     LOAD_GLOBAL              9 (QTimer + NULL)
+               LOAD_DEREF               0 (self)
+               CALL                     1
+               LOAD_DEREF               0 (self)
+               STORE_ATTR               2 (_expiration_timer)
+
+ 344           LOAD_DEREF               0 (self)
+               LOAD_ATTR                4 (_expiration_timer)
+               LOAD_ATTR               10 (timeout)
+               LOAD_ATTR               13 (connect + NULL|self)
+               LOAD_FAST                2 (update_expiration_label)
+               CALL                     1
+               POP_TOP
+
+ 345           LOAD_DEREF               0 (self)
+               LOAD_ATTR                4 (_expiration_timer)
+               LOAD_ATTR               15 (start + NULL|self)
+               LOAD_CONST               4 (60000)
+               CALL                     1
+               POP_TOP
+
+ 347           LOAD_FAST                2 (update_expiration_label)
+               PUSH_NULL
+               CALL                     0
+               POP_TOP
+               RETURN_CONST             3 (None)
+
+Disassembly of <code object update_expiration_label at 0x559f5c20e6f0, file "main_app.py", line 307>:
+  --            COPY_FREE_VARS           1
+
+ 307            RESUME                   0
+
+ 308            NOP
+
+ 309    L1:     LOAD_DEREF               8 (self)
+                LOAD_ATTR                0 (expiration_time)
+                LOAD_CONST               1 ('')
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       38 (to L3)
+
+ 310            LOAD_DEREF               8 (self)
+                LOAD_ATTR                2 (main_page)
+                LOAD_ATTR                4 (expiration_label)
+                LOAD_ATTR                7 (setText + NULL|self)
+                LOAD_CONST               2 ('Thời hạn: Vĩnh viễn')
+                CALL                     1
+                POP_TOP
+        L2:     RETURN_CONST             0 (None)
+
+ 313    L3:     LOAD_GLOBAL              9 (isinstance + NULL)
+                LOAD_DEREF               8 (self)
+                LOAD_ATTR                0 (expiration_time)
+                LOAD_GLOBAL             10 (str)
+                CALL                     2
+                TO_BOOL
+                POP_JUMP_IF_FALSE       34 (to L4)
+
+ 314            LOAD_GLOBAL             12 (datetime)
+                LOAD_ATTR               14 (strptime)
+                PUSH_NULL
+                LOAD_DEREF               8 (self)
+                LOAD_ATTR                0 (expiration_time)
+                LOAD_CONST               3 ('%Y-%m-%d %H:%M')
+                CALL                     2
+                STORE_FAST               0 (exp_dt)
+                JUMP_FORWARD            55 (to L6)
+
+ 315    L4:     LOAD_GLOBAL              9 (isinstance + NULL)
+                LOAD_DEREF               8 (self)
+                LOAD_ATTR                0 (expiration_time)
+                LOAD_GLOBAL             12 (datetime)
+                CALL                     2
+                TO_BOOL
+                POP_JUMP_IF_FALSE       13 (to L5)
+
+ 316            LOAD_DEREF               8 (self)
+                LOAD_ATTR                0 (expiration_time)
+                STORE_FAST               0 (exp_dt)
+                JUMP_FORWARD            11 (to L6)
+
+ 318    L5:     LOAD_GLOBAL             17 (ValueError + NULL)
+                LOAD_CONST               4 ('expiration_time is not a valid type')
+                CALL                     1
+                RAISE_VARARGS            1
+
+ 321    L6:     LOAD_GLOBAL             19 (get_current_time + NULL)
+                CALL                     0
+                STORE_FAST               1 (now)
+
+ 322            LOAD_FAST_LOAD_FAST      1 (exp_dt, now)
+                BINARY_OP               10 (-)
+                STORE_FAST               2 (delta)
+
+ 323            LOAD_GLOBAL             21 (int + NULL)
+                LOAD_FAST                2 (delta)
+                LOAD_ATTR               23 (total_seconds + NULL|self)
+                CALL                     0
+                LOAD_CONST               5 (60)
+                BINARY_OP                2 (//)
+                CALL                     1
+                STORE_FAST               3 (total_minutes)
+
+ 324            LOAD_FAST                3 (total_minutes)
+                LOAD_CONST               6 (0)
+                COMPARE_OP              58 (bool(<=))
+                POP_JUMP_IF_FALSE       50 (to L8)
+
+ 325            LOAD_DEREF               8 (self)
+                LOAD_ATTR                2 (main_page)
+                LOAD_ATTR                4 (expiration_label)
+                LOAD_ATTR                7 (setText + NULL|self)
+                LOAD_CONST               7 ('Thời hạn: Đã hết hạn')
+                CALL                     1
+                POP_TOP
+
+ 326            LOAD_GLOBAL             25 (notice_and_shutdown + NULL)
+                LOAD_CONST               8 ('Thông Báo!')
+                LOAD_CONST               9 ('Tài khoản của bạn đã hết hạn. Liên hệ admin để gia hạn!')
+                CALL                     2
+                POP_TOP
+
+ 327    L7:     RETURN_CONST             0 (None)
+
+ 328    L8:     LOAD_FAST                3 (total_minutes)
+                LOAD_CONST              10 (1440)
+                BINARY_OP                2 (//)
+                STORE_FAST               4 (days)
+
+ 329            LOAD_FAST                3 (total_minutes)
+                LOAD_CONST              10 (1440)
+                BINARY_OP                6 (%)
+                LOAD_CONST               5 (60)
+                BINARY_OP                2 (//)
+                STORE_FAST               5 (hours)
+
+ 330            LOAD_FAST                3 (total_minutes)
+                LOAD_CONST               5 (60)
+                BINARY_OP                6 (%)
+                STORE_FAST               6 (minutes)
+
+ 331            LOAD_DEREF               8 (self)
+                LOAD_ATTR                2 (main_page)
+                LOAD_ATTR                4 (expiration_label)
+                LOAD_ATTR                7 (setText + NULL|self)
+
+ 332            LOAD_CONST              11 ('Thời hạn: ')
+                LOAD_FAST                4 (days)
+                FORMAT_SIMPLE
+                LOAD_CONST              12 ('d ')
+                LOAD_FAST                5 (hours)
+                FORMAT_SIMPLE
+                LOAD_CONST              13 ('h ')
+                LOAD_FAST                6 (minutes)
+                FORMAT_SIMPLE
+                LOAD_CONST              14 ('m')
+                BUILD_STRING             7
+
+ 331            CALL                     1
+                POP_TOP
+        L9:     RETURN_CONST             0 (None)
+
+  --   L10:     PUSH_EXC_INFO
+
+ 334            LOAD_GLOBAL             26 (Exception)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       70 (to L14)
+                STORE_FAST               7 (e)
+
+ 335   L11:     LOAD_GLOBAL             29 (print + NULL)
+                LOAD_CONST              15 ('Error updating expiration label: ')
+                LOAD_GLOBAL             11 (str + NULL)
+                LOAD_FAST                7 (e)
+                CALL                     1
+                FORMAT_SIMPLE
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+
+ 336            LOAD_DEREF               8 (self)
+                LOAD_ATTR                2 (main_page)
+                LOAD_ATTR                4 (expiration_label)
+                LOAD_ATTR                7 (setText + NULL|self)
+                LOAD_CONST              16 ('Thời hạn: Không xác định')
+                CALL                     1
+                POP_TOP
+       L12:     POP_EXCEPT
+                LOAD_CONST               0 (None)
+                STORE_FAST               7 (e)
+                DELETE_FAST              7 (e)
+                RETURN_CONST             0 (None)
+
+  --   L13:     LOAD_CONST               0 (None)
+                STORE_FAST               7 (e)
+                DELETE_FAST              7 (e)
+                RERAISE                  1
+
+ 334   L14:     RERAISE                  0
+
+  --   L15:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L10 [0]
+  L3 to L7 -> L10 [0]
+  L8 to L9 -> L10 [0]
+  L10 to L11 -> L15 [1] lasti
+  L11 to L12 -> L13 [1] lasti
+  L13 to L15 -> L15 [1] lasti
+
+Disassembly of <code object closeEvent at 0x7f15fae907a0, file "main_app.py", line 350>:
+350           RESUME                   0
+
+352           LOAD_FAST                0 (self)
+              LOAD_ATTR                1 (send_logout + NULL|self)
+              CALL                     0
+              POP_TOP
+
+353           LOAD_FAST                1 (event)
+              LOAD_ATTR                3 (accept + NULL|self)
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             1 (None)
+
+Disassembly of <code object send_logout at 0x7f15fb16a010, file "main_app.py", line 356>:
+ 356           RESUME                   0
+
+ 357           LOAD_FAST                0 (self)
+               LOAD_ATTR                0 (username)
+               TO_BOOL
+               POP_JUMP_IF_TRUE         1 (to L1)
+
+ 358           RETURN_CONST             0 (None)
+
+ 359   L1:     NOP
+
+ 360   L2:     LOAD_GLOBAL              2 (WEBSITE_URL)
+               FORMAT_SIMPLE
+               LOAD_CONST               1 ('/api/tool/logout')
+               BUILD_STRING             2
+               STORE_FAST               1 (url)
+
+ 361           LOAD_CONST               2 ('username')
+               LOAD_FAST                0 (self)
+               LOAD_ATTR                0 (username)
+               BUILD_MAP                1
+               STORE_FAST               2 (payload)
+
+ 362           LOAD_GLOBAL              4 (requests)
+               LOAD_ATTR                6 (post)
+               PUSH_NULL
+               LOAD_FAST_LOAD_FAST     18 (url, payload)
+               LOAD_CONST               3 (('json',))
+               CALL_KW                  2
+               LOAD_ATTR                9 (json + NULL|self)
+               CALL                     0
+               STORE_FAST               3 (res)
+
+ 363           LOAD_GLOBAL             11 (print + NULL)
+               LOAD_CONST               4 ('Logout response:')
+               LOAD_FAST                3 (res)
+               CALL                     2
+               POP_TOP
+       L3:     RETURN_CONST             0 (None)
+
+  --   L4:     PUSH_EXC_INFO
+
+ 364           LOAD_GLOBAL             12 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       33 (to L8)
+               STORE_FAST               4 (e)
+
+ 365   L5:     LOAD_GLOBAL             11 (print + NULL)
+               LOAD_CONST               5 ('Logout error:')
+               LOAD_FAST                4 (e)
+               CALL                     2
+               POP_TOP
+
+ 367           LOAD_GLOBAL             11 (print + NULL)
+               LOAD_FAST                4 (e)
+               CALL                     1
+               POP_TOP
+       L6:     POP_EXCEPT
+               LOAD_CONST               0 (None)
+               STORE_FAST               4 (e)
+               DELETE_FAST              4 (e)
+               RETURN_CONST             0 (None)
+
+  --   L7:     LOAD_CONST               0 (None)
+               STORE_FAST               4 (e)
+               DELETE_FAST              4 (e)
+               RERAISE                  1
+
+ 364   L8:     RERAISE                  0
+
+  --   L9:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L4 [0]
+  L4 to L5 -> L9 [1] lasti
+  L5 to L6 -> L7 [1] lasti
+  L7 to L9 -> L9 [1] lasti
+
